@@ -1,8 +1,9 @@
 import Button from "$/components/button";
 import Link from "next/link";
+import Straps from "./_components/straps";
 export default function HeroSection() {
   return (
-    <section className="flex items-center justify-center h-screen w-screen bg-slate-900">
+    <section className="overflow-x-hidden flex items-center justify-center h-screen w-screen bg-slate-900">
       <div>
         <Link
           href={"/"}
@@ -11,7 +12,7 @@ export default function HeroSection() {
           <span>What Others Say About Us</span>
           <span>{/* Arrow right icon here */}</span>
         </Link>
-        <h1 className="flex flex-col gap-4 mb-3 md:mb-6 lg:mb-8 uppercase leading-loose text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl  text-white text-center font-semibold">
+        <h1 className="flex flex-col gap-4 mb-3 md:mb-6 lg:mb-8 uppercase  text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl  text-white text-center font-semibold">
           <span>
             <span>Transform</span> Business with
           </span>
@@ -25,9 +26,10 @@ export default function HeroSection() {
           voluptate quia sit debitis sint cum, obcaecati veritatis, repudiandae
           rem maiores in.
         </p>
-        <Button className="text-center block mx-auto">
+        <Button className="text-center block mx-auto mb-6 md:mb-10 lg:mb-12">
           Book free consultation
         </Button>
+        <Straps />
       </div>
     </section>
   );

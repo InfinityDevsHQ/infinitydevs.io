@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Hero Section Styles */
+.strap {
+  @apply flex items-center uppercase w-full font-bold p-2 text-xs sm:text-sm md:text-base lg:text-lg bg-neutral-300;
+}
