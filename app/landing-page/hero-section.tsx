@@ -1,9 +1,11 @@
 import Button from "$/components/button";
 import Link from "next/link";
 import Straps from "./_components/straps";
+import Header from "../_components/header";
 export default function HeroSection() {
   return (
-    <section className="overflow-x-hidden flex items-center justify-center h-screen w-screen bg-slate-900">
+    <section className="overflow-x-hidden relative flex items-center justify-center h-screen w-screen bg-slate-900">
+      <Header className="absolute top-0" />
       <div>
         <Link
           href={"/"}
@@ -19,10 +21,10 @@ export default function HeroSection() {
           <span>smart and tech savvy</span>
           <span>solutions</span>
         </h1>
-        <p className="text-center mb-4 md:mb-8 lg:mb-10 text-zinc-300">
+        <p className="max-w-full text-center text-sm md:text-base xl:text-lg 2xl:text-xl mb-4 md:mb-8 lg:mb-10 text-zinc-300">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
-          nesciunt nobis! Reiciendis eligendi aliquid, nobis quasi aperiam enim
-          <br></br>
+          nesciunt nobis! Reiciendis
+          <br />
           voluptate quia sit debitis sint cum, obcaecati veritatis, repudiandae
           rem maiores in.
         </p>
