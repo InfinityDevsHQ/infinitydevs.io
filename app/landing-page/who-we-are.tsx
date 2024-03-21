@@ -1,6 +1,5 @@
-import Card from "$/components/card";
-import Heading from "../_components/main-heading";
-
+import Heading from "../_components/heading";
+import Overselves from "./_components/ourselves";
 export default function WhoWeAre() {
   return (
     <section className="bg-slate-900  px-8 py-4">
@@ -16,7 +15,7 @@ export default function WhoWeAre() {
             it comes to turing users into raving fanatics and generating
             consistent leads for your business.
           </p>
-          <p className="main-descriptions text-center">
+          <p className="main-descriptions text-center mb-4 md:mb-8 lg:mb-10">
             Design with style provides a full service, in house web design and
             digital marketing agency with over 13 years of experience in the
             creative industry. We develop integrated marketing solutions that
@@ -26,9 +25,7 @@ export default function WhoWeAre() {
           </p>
         </div>
       </div>
-      <div>
-        <Card />
-      </div>
+      <Overselves />
     </section>
   );
 }
