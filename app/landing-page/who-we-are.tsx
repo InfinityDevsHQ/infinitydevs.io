@@ -5,7 +5,10 @@ export default function WhoWeAre() {
     <section className="bg-slate-900  px-8 py-4">
       <div className="flex items-center justify-center">
         <div className="box-max-width">
-          <Heading className="uppercase mb-3 md:mb-6 lg:mb-8 font-bold text-center">
+          <Heading
+            size="h2"
+            className="uppercase mb-3 md:mb-6 lg:mb-8 font-bold text-center"
+          >
             <span>who</span> we are
           </Heading>
           <p className="main-descriptions text-center">
