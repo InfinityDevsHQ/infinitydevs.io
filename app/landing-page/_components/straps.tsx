@@ -1,6 +1,6 @@
 export default function Straps() {
   return (
-    <div className="relative w-screen ">
+    <div className="relative">
       <div className="strap justify-between">
         <span>web design</span>
         <span>web apps</span>
