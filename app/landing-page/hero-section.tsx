@@ -16,7 +16,7 @@ export default function HeroSection() {
               <span>What Others Say About Us</span>
               <span>{/* Arrow right icon here */}</span>
             </Link>
-            <h1 className="flex flex-col gap-4 mb-3 md:mb-6 lg:mb-8 uppercase  text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl  text-white text-center font-semibold">
+            <h1 className="flex flex-col gap-4 mb-3 md:mb-6 lg:mb-8 uppercase  text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl  text-white text-center font-semibold">
               <span>
                 <span>Transform</span> Business with
               </span>
