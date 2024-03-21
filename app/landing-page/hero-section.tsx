@@ -7,7 +7,7 @@ export default function HeroSection() {
     <>
       <section className="overflow-x-hidden relative  h-screen w-screen bg-slate-900">
         <Header className="absolute top-0" />
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center mb-48 xl:mb-0">
           <div className="box-max-width mt-36">
             <Link
               href={"/"}
