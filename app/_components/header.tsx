@@ -7,8 +7,14 @@ export default function Header({ className }: HeaderProps) {
     <header
       className={`flex items-center justify-between w-full  px-4 pt-8 ${className}`}
     >
-      <div>{/* Logo Here */}</div>
-      <nav className="text-white text-lg capitalize font-bold">
+      <div>
+        {
+          /* Logo Here */ <span className="text-3xl font-black text-white">
+            Logo
+          </span>
+        }
+      </div>
+      <nav className="hidden lg:block text-white text-lg capitalize font-bold">
         <ol className="flex items-center gap-12">
           <li>
             <Link href={"/"}>Home</Link>
@@ -30,7 +36,11 @@ export default function Header({ className }: HeaderProps) {
           </li>
         </ol>
       </nav>
-      <div></div>
+      <div>
+        <div className="lg:hidden">
+          <span></span>
+        </div>
+      </div>
     </header>
   );
 }
