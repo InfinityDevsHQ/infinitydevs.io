@@ -2,6 +2,7 @@ import Button from "$/components/button";
 import Link from "next/link";
 import Straps from "./_components/straps";
 import Header from "../_components/header";
+import { ArrowRight } from "lucide-react";
 export default function HeroSection() {
   return (
     <>
@@ -11,10 +12,10 @@ export default function HeroSection() {
           <div className="box-max-width mt-36">
             <Link
               href={"/"}
-              className="flex w-52 mx-auto items-center px-2 py-1 mb-3 md:mb-6 lg:mb-8 text-sm text-zinc-300 font-semibold bg-blue-900/40 rounded-full"
+              className="flex w-52 mx-auto items-center justify-between px-2 py-1 mb-3 md:mb-6 lg:mb-8 text-sm text-zinc-300 font-semibold bg-blue-900/40 rounded-full"
             >
               <span>What Others Say About Us</span>
-              <span>{/* Arrow right icon here */}</span>
+              <ArrowRight size={20} />
             </Link>
             <h1 className="flex flex-col gap-4 mb-3 md:mb-6 lg:mb-8 uppercase  text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl  text-white text-center font-semibold">
               <span>
