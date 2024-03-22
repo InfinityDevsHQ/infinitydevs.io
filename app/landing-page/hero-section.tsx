@@ -12,7 +12,7 @@ export default function HeroSection() {
           <div className="box-max-width mt-36">
             <Link
               href={"/"}
-              className="flex w-52 mx-auto items-center justify-between px-2 py-1 mb-3 md:mb-6 lg:mb-8 text-sm text-zinc-300 font-semibold bg-blue-900/40 rounded-full"
+              className="flex w-56 mx-auto items-center justify-between px-2 py-1 mb-3 md:mb-6 lg:mb-8 text-sm text-zinc-300 font-semibold bg-blue-900/40 rounded-full"
             >
               <span>What Others Say About Us</span>
               <ArrowRight size={20} />
