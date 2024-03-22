@@ -1,4 +1,5 @@
 import Heading from "../_components/heading";
+import CodeTechnologies from "./_components/code-texhnologies";
 
 export default function Technologies() {
   return (
@@ -21,6 +22,7 @@ export default function Technologies() {
           <p className="main-descriptions text-center mb-4 md:mb-8 lg:mb-10">
             Design with style provides a full service.
           </p>
+          <CodeTechnologies />
         </div>
       </div>
     </section>
