@@ -1,3 +1,4 @@
+import ContactUs from "./landing-page/contact-us";
 import HeroSection from "./landing-page/hero-section";
 import HowWeWork from "./landing-page/how-we-work";
 import Technologies from "./landing-page/technologies";
@@ -11,6 +12,7 @@ export default function Home() {
         <WhoWeAre />
         <HowWeWork />
         <Technologies />
+        <ContactUs />
       </main>
     </>
   );
