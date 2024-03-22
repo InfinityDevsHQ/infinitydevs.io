@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function CodeTechnologies() {
   return (
-    <div className="grid lg:grid-cols-5 items-center">
+    <div className="grid lg:grid-cols-5 items-center mb-12">
       <div className="flex flex-col gap-4">
         <span className="flex items-center justify-center">
           <Image

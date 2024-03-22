@@ -1,10 +1,11 @@
 import Heading from "../_components/heading";
 import CodeTechnologies from "./_components/code-texhnologies";
+import Features from "./_components/features";
 
 export default function Technologies() {
   return (
     <section className="bg-slate-900  px-8 py-4">
-      <div className="flex items-center justify-center">
+      <div className="flex flex-col items-center justify-center">
         <div className="box-max-width">
           <Heading
             size="h2"
@@ -24,6 +25,7 @@ export default function Technologies() {
           </p>
           <CodeTechnologies />
         </div>
+        <Features />
       </div>
     </section>
   );

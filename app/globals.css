@@ -14,3 +14,6 @@ body {
 .main-descriptions {
   @apply text-sm md:text-base xl:text-lg 2xl:text-xl text-zinc-300;
 }
+.common-gradient {
+  background-image: linear-gradient(to right, rgb(0, 0, 200), rgb(100, 0, 60));
+}
