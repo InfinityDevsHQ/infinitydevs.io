@@ -15,5 +15,12 @@ body {
   @apply text-sm md:text-base xl:text-lg 2xl:text-xl text-zinc-300;
 }
 .common-gradient {
-  background-image: linear-gradient(to right, rgb(0, 0, 200), rgb(100, 0, 60));
+  background-image: linear-gradient(to right, rgb(0, 0, 200), rgb(120, 0, 110));
+}
+.gradient-text,
+h2 span {
+  background-image: linear-gradient(to right, rgb(0, 0, 200), rgb(120, 0, 110));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
