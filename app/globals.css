@@ -9,7 +9,7 @@ body {
   @apply flex items-center uppercase w-full font-bold p-2 text-xs sm:text-sm md:text-base lg:text-lg bg-neutral-300;
 }
 .box-max-width {
-  max-width: 1200px;
+  max-width: 1000px;
 }
 .main-descriptions {
   @apply text-sm md:text-base xl:text-lg 2xl:text-xl text-zinc-300;
