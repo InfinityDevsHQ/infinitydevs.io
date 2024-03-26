@@ -23,6 +23,14 @@ export default function Heading({ children, size = "h2", className }: Headng) {
           {children}
         </h3>
       );
+    case "h4":
+      return (
+        <h4
+          className={`text-xl lg:text-2xl 2xl:text-3xl text-white  ${className}`}
+        >
+          {children}
+        </h4>
+      );
     default:
       break;
   }
