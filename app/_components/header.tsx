@@ -5,6 +5,7 @@ import { X } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import DesktopNav from "./navigation";
 
 export type HeaderProps = {
   className?: string;
@@ -29,28 +30,7 @@ export default function Header({ className }: HeaderProps) {
           alt="Infinity Devs Logo"
         />
       </div>
-      <nav className="hidden lg:block text-white text-lg capitalize font-bold">
-        <ol className="flex items-center gap-12">
-          <li>
-            <Link href={"/"}>Home</Link>
-          </li>
-          <li>
-            <Link href={"/"}>About Us</Link>
-          </li>
-          <li>
-            <Link href={"/"}>Insights</Link>
-          </li>
-          <li>
-            <Link href={"/"}>Portfolio</Link>
-          </li>
-          <li>
-            <Link href={"/"}>Contact Us</Link>
-          </li>
-          <li>
-            <Link href={"/"}>Careers</Link>
-          </li>
-        </ol>
-      </nav>
+      <DesktopNav className="hidden lg:block" />
       <div>
         <div className="lg:hidden">
           <button
