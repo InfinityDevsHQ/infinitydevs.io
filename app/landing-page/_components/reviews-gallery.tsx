@@ -1,8 +1,8 @@
 import Review from "./review";
 export default function ReviewsGallery() {
   return (
-    <div className="grid lg:grid-cols-4">
-      <div>
+    <div className="grid lg:grid-cols-4 gap-4">
+      <div className="flex flex-col gap-4">
         <Review
           imageUrl="/client.jpg"
           name="John Doe"
@@ -20,9 +20,65 @@ export default function ReviewsGallery() {
           repudiandae fuga eaque velit inventore!"
         />
       </div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div className="flex flex-col gap-4">
+        <Review
+          imageUrl="/client.jpg"
+          name="John Doe"
+          review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
+          totam odio blanditiis temporibus mtore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+          deleniti eveniet consequatur eos quo velit nostrum, impedit voluptatem
+          fuga at temporibus harum voluptatum sint repellendus repellat.
+          Exercitationem eius ex possimus."
+        />
+        <Review
+          imageUrl="/client.jpg"
+          name="John Doe"
+          review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
+          totam odio blanditiis temporibus molli!"
+        />
+      </div>
+      <div className="flex flex-col gap-4">
+        <Review
+          imageUrl="/client.jpg"
+          name="John Doe"
+          review="Lorem ipsum dolor sit amum sint repellendus repellat.
+          Exercitationem eius ex possimus."
+        />
+        <Review
+          imageUrl="/client.jpg"
+          name="John Doe"
+          review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
+          totam odio blanditiis po molli!"
+        />
+        <Review
+          imageUrl="/client.jpg"
+          name="John Doe"
+          review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
+          totam odio blanditiis temporibus molli!"
+        />
+      </div>
+      <div className="flex flex-col gap-4">
+        <Review
+          imageUrl="/client.jpg"
+          name="John Doe"
+          review="Lorem ipsum dolor sit  sint repellendus repellat."
+        />
+        <Review
+          imageUrl="/client.jpg"
+          name="John Doe"
+          review="Lorem ipsum dolor sit amet consectetur adipisicing"
+        />
+        <Review
+          imageUrl="/client.jpg"
+          name="John Doe"
+          review="Lorem ipsuiis temporibus molli!"
+        />
+        <Review
+          imageUrl="/client.jpg"
+          name="John Doe"
+          review="Lorem ipsuiis temporibus molli!"
+        />
+      </div>
     </div>
   );
 }
