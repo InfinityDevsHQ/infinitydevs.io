@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900  px-8 py-6 ">
       <div className="px-6 py-4 border rounded-2xl bg-indigo-900/40">
-        <div className="flex items-center  justify-between border-b pb-4">
+        <div className="flex flex-col gap-4 lg:flex-row items-center  justify-between border-b pb-4">
           <div className="flex items-center justify-center">
             <Image
               src={"/logo-light.png"}

@@ -5,7 +5,7 @@ export type DesktopNavProps = {
 export default function Navigation({ className }: DesktopNavProps) {
   return (
     <nav className={`text-white text-lg capitalize font-bold ${className}`}>
-      <ol className="flex flex-wrap lg:flex-nowrap items-center gap-12">
+      <ol className="flex flex-wrap lg:flex-nowrap items-center gap-12 text-center">
         <li>
           <Link href={"/"}>Home</Link>
         </li>
