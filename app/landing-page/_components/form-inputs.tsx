@@ -26,6 +26,7 @@ export default function FormInputs({ formData, setFormData }: FormInputsProps) {
           name="name"
           onChange={(e) => handleChange(e)}
           placeholder="John Doe"
+          required
           className="bg-blue-900/40 placeholder:text-zinc-400 border border--white/30 outline-none !ring-0 ring-offset-transparent"
         />
       </div>
@@ -36,6 +37,7 @@ export default function FormInputs({ formData, setFormData }: FormInputsProps) {
           type="email"
           name="email"
           onChange={(e) => handleChange(e)}
+          required
           placeholder="someone@domain.com"
           className="bg-blue-900/40 placeholder:text-zinc-400 border border--white/30 outline-none !ring-0 ring-offset-transparent"
         />
@@ -45,6 +47,7 @@ export default function FormInputs({ formData, setFormData }: FormInputsProps) {
         <Textarea
           id="message"
           placeholder="type your message"
+          required
           name="message"
           onChange={(e) => handleChange(e)}
           className="bg-blue-900/40 placeholder:text-zinc-400 border border--white/30 outline-none !ring-0 ring-offset-transparent"
