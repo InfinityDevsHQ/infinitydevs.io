@@ -5,32 +5,32 @@ export default function Partners() {
     <div className="flex flex-col lg:flex-row gap-12 items-center justify-between">
       <span>
         <Image
-          src={"/indeed-logo.png"}
-          alt="Indeed Logo"
-          width={200}
-          height={2000}
-        />
-      </span>
-      <span>
-        <Image
-          src={"/clutch-logo.png"}
-          alt="Clutch Logo"
+          src={"/partners/partner-1.png"}
+          alt=""
           width={200}
           height={200}
         />
       </span>
       <span>
         <Image
-          src={"/google-logo.png"}
-          alt="Google Logo"
+          src={"/partners/partner-2.png"}
+          alt=""
           width={200}
           height={200}
         />
       </span>
       <span>
         <Image
-          src={"/good-firm-logo.png"}
-          alt="Good Firm logo"
+          src={"/partners/partner-3.png"}
+          alt=""
+          width={200}
+          height={200}
+        />
+      </span>
+      <span>
+        <Image
+          src={"/partners/partner-4.png"}
+          alt=""
           width={200}
           height={200}
         />

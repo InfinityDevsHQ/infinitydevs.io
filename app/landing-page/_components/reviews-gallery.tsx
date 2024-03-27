@@ -2,7 +2,7 @@ import Review from "./review";
 export default function ReviewsGallery() {
   return (
     <div className="flex items-center justify-center">
-      <div className="lg:grid lg:grid-cols-4 gap-4">
+      <div className="grid lg:grid-cols-4 gap-4">
         <div className="flex flex-col gap-4">
           <Review
             imageUrl="/client.jpg"
