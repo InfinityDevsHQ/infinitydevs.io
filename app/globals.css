@@ -17,8 +17,23 @@ body {
 .box-max-width {
   max-width: 1000px;
 }
+@media (min-width: 1650px) {
+  .box-max-width {
+    max-width: 1500px;
+  }
+}
+@media (min-width: 2000px) {
+  .box-max-width {
+    max-width: 2000px;
+  }
+}
+
 .common-gradient {
   background-image: linear-gradient(to right, #3d81df, #834ad8, #bb41e1);
+}
+.common-border {
+  border: 2px solid;
+  border-image: linear-gradient(to right, #3d81df, #834ad8, #bb41e1) 1;
 }
 .gradient-text,
 h2 span {

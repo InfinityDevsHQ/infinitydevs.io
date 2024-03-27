@@ -8,11 +8,11 @@ export default function HeroSection() {
     <>
       <section className="overflow-x-hidden relative  h-screen w-screen bg-slate-900">
         <Header className="absolute top-0" />
-        <div className="flex items-center justify-center mb-48 xl:mb-0">
-          <div className="box-max-width mt-36">
+        <div className="flex items-center justify-center">
+          <div className="box-max-width mt-72 3xl:mt-96">
             <Link
               href={"/"}
-              className="flex w-56 mx-auto items-center justify-between px-2 py-1 mb-3 md:mb-6 lg:mb-8 text-sm text-zinc-300 font-semibold bg-blue-900/40 rounded-full"
+              className="flex max-w-max common-border mx-auto items-center justify-between px-2 py-1 mb-3 md:mb-6 lg:mb-8 text-sm text-zinc-300 font-semibold bg-blue-900/40 rounded-full"
             >
               <span>What Others Say About Us</span>
               <ArrowRight size={20} />

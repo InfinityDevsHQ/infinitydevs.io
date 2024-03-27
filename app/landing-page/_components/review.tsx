@@ -19,7 +19,6 @@ export default function Review({ imageUrl, name, review }: ReviewProps) {
           />
         </span>
         <Heading size="h4" className="uppercase">
-          {" "}
           {name}
         </Heading>
       </div>

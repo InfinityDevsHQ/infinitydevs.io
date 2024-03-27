@@ -25,7 +25,7 @@ export default function PortfolioCard({
           {pills.map((pill, index) => (
             <span
               key={index}
-              className="flex  max-w-max items-center justify-between px-2 py-1  text-sm text-zinc-300 font-semibold bg-blue-900/40 rounded-full"
+              className="flex common-border  max-w-max items-center justify-between px-2 py-1  text-sm text-zinc-300 font-semibold bg-blue-900/40 rounded-full"
             >
               {pill}
             </span>
