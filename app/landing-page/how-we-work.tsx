@@ -1,5 +1,6 @@
 import Heading from "../_components/heading";
 import { PlayCircle } from "lucide-react";
+import Image from "next/image";
 export default function HowWeWork() {
   return (
     <section className="bg-slate-900  px-8 py-4">
@@ -19,12 +20,42 @@ export default function HowWeWork() {
             <h2 className="mt-72">5. Testing</h2>
           </div>
           <div className="flex flex-col gap-12">
-            <PlayCircle size={130} />
-            <PlayCircle size={130} />
-            <PlayCircle size={130} />
-            <PlayCircle size={130} />
-            <PlayCircle size={130} />
-            <PlayCircle size={130} />
+            <Image
+              src={"/work/icon-1.png"}
+              alt="Icon"
+              width={130}
+              height={130}
+            />
+            <Image
+              src={"/work/icon-2.png"}
+              alt="Icon"
+              width={130}
+              height={130}
+            />
+            <Image
+              src={"/work/icon-3.png"}
+              alt="Icon"
+              width={130}
+              height={130}
+            />
+            <Image
+              src={"/work/icon-4.png"}
+              alt="Icon"
+              width={130}
+              height={130}
+            />
+            <Image
+              src={"/work/icon-5.png"}
+              alt="Icon"
+              width={130}
+              height={130}
+            />
+            <Image
+              src={"/work/icon-6.png"}
+              alt="Icon"
+              width={130}
+              height={130}
+            />
           </div>
           <div className="flex flex-col">
             <h2 className="mt-52">2. Brain Storming</h2>
@@ -35,26 +66,26 @@ export default function HowWeWork() {
         <div className="flex md:hidden flex-col gap-12 max-width-[800px]">
           <div className="flex justify-between gap-4 items-center">
             <h3>1. Requirement Gathering</h3>
-            <PlayCircle size={32} />
+            <Image src={"/work/icon-1.png"} alt="Icon" width={32} height={32} />
           </div>
           <div className="flex  justify-between items-center">
-            <PlayCircle size={32} />
+            <Image src={"/work/icon-2.png"} alt="Icon" width={32} height={32} />
             <h3>2. Brain Storming</h3>
           </div>
           <div className="flex  justify-between items-center">
             <h3>3. Prototyping</h3>
-            <PlayCircle size={32} />
+            <Image src={"/work/icon-3.png"} alt="Icon" width={32} height={32} />
           </div>
           <div className="flex  justify-between items-center">
-            <PlayCircle size={32} />
+            <Image src={"/work/icon-4.png"} alt="Icon" width={32} height={32} />
             <h3>4. Development</h3>
           </div>
           <div className="flex  justify-between items-center">
             <h3>5. Testing</h3>
-            <PlayCircle size={32} />
+            <Image src={"/work/icon-5.png"} alt="Icon" width={32} height={32} />
           </div>
           <div className="flex  justify-between items-center">
-            <PlayCircle size={32} />
+            <Image src={"/work/icon-6.png"} alt="Icon" width={32} height={32} />
             <h3>6. Deliver to client</h3>
           </div>
         </div>
