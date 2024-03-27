@@ -1,10 +1,17 @@
 import Card from "$/components/card";
-import { ArrowDownCircleIcon, Microscope, Settings } from "lucide-react";
+import Image from "next/image";
 export default function Overselves() {
   return (
     <div className="grid lg:grid-cols-3 gap-6 mb-12">
       <Card
-        icon={<ArrowDownCircleIcon size={100} color="#3d81df" />}
+        icon={
+          <Image
+            src={"/cards-images/arrow.png"}
+            width={200}
+            height={200}
+            alt="Arrow in the bow image"
+          />
+        }
         title="Our Mission"
       >
         We&apos;re a nationally recognized web design company with a targeted
@@ -18,7 +25,17 @@ export default function Overselves() {
         work overseas or to robots. We are real people, with a real passion for
         what we do.
       </Card>
-      <Card icon={<Microscope size={100} color="#3d81df" />} title="Our vision">
+      <Card
+        icon={
+          <Image
+            src={"/cards-images/scope.png"}
+            width={200}
+            height={200}
+            alt="Scope"
+          />
+        }
+        title="Our vision"
+      >
         We&apos;re a nationally recognized web design company with a targeted
         local presence. What does that mean for you? Your site is expertly
         designed and marketed by professionals who are wizards when it comes to
@@ -30,7 +47,17 @@ export default function Overselves() {
         work overseas or to robots. We are real people, with a real passion for
         what we do.
       </Card>
-      <Card icon={<Settings size={100} color="#3d81df" />} title="Our Strategy">
+      <Card
+        icon={
+          <Image
+            src={"/cards-images/settings.png"}
+            width={200}
+            height={200}
+            alt="Settings"
+          />
+        }
+        title="Our Strategy"
+      >
         We&apos;re a nationally recognized web design company with a targeted
         local presence. What does that mean for you? Your site is expertly
         designed and marketed by professionals who are wizards when it comes to
