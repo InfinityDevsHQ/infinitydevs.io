@@ -1,9 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Hero Section Styles */
 body {
   overflow-x: hidden;
+  background-color: rgb(15, 23, 42);
 }
 .strap {
   @apply flex items-center uppercase w-full font-bold p-2 text-xs sm:text-sm md:text-base lg:text-lg bg-neutral-300;
@@ -26,4 +26,7 @@ h2 span {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+section {
+  margin-bottom: 2rem;
 }
