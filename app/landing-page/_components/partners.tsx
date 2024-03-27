@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Partners() {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex flex-col lg:flex-row gap-12 items-center justify-between">
       <span>
         <Image
           src={"/indeed-logo.png"}
