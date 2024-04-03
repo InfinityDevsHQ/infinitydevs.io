@@ -31,18 +31,24 @@ export default function HeroSection() {
               <span>
                 <span className="gradient-text">Crafting</span> infinite
               </span>
-              {wordsToAnimate.map((word, index) => (
-                <>
-                  {index === activeIndex && (
-                    <span
-                      key={index}
-                      className={index === activeIndex ? "typing" : ""}
-                    >
-                      {wordsToAnimate[activeIndex]}
-                    </span>
-                  )}
-                </>
-              ))}
+              <span>
+                {wordsToAnimate.map((word, index) => (
+                  <>
+                    {index === activeIndex && (
+                      <span
+                        key={index}
+                        className={
+                          index === activeIndex
+                            ? "typing max-w-max text-center"
+                            : ""
+                        }
+                      >
+                        {wordsToAnimate[activeIndex]}
+                      </span>
+                    )}
+                  </>
+                ))}
+              </span>
               <span>solutions</span>
             </h1>
             <p className="main-descriptions text-center mb-4 md:mb-8 lg:mb-10">
