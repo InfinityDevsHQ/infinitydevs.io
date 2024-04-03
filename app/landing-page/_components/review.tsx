@@ -4,10 +4,18 @@ export type ReviewProps = {
   imageUrl?: string;
   name?: string;
   review?: string;
+  className?: string;
 };
-export default function Review({ imageUrl, name, review }: ReviewProps) {
+export default function Review({
+  imageUrl,
+  name,
+  review,
+  className,
+}: ReviewProps) {
   return (
-    <div className="px-6 py-4 rounded-3xl  max-w-96 2xl:max-w-[30rem] bg-purple-900 border border-white">
+    <div
+      className={`px-6 py-4 rounded-3xl  max-w-96 2xl:max-w-[30rem] bg-purple-900 border border-white ${className}`}
+    >
       <div className="flex items-center gap-4 mb-2">
         <span>
           <Image
