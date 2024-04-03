@@ -12,7 +12,7 @@ body {
   @apply text-sm md:text-base xl:text-lg 2xl:text-xl text-zinc-300;
 }
 .image-flex {
-  @apply flex flex-col gap-16;
+  @apply flex flex-col md:flex-row  gap-16;
 }
 .box-max-width {
   max-width: 1000px;
