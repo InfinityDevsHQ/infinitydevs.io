@@ -2,7 +2,7 @@ import ContactUs from "./landing-page/contact-us";
 import Footer from "./landing-page/footer";
 import HeroSection from "./landing-page/hero-section";
 import HowWeWork from "./landing-page/how-we-work";
-import OurPartners from "./landing-page/our-partners";
+// import OurPartners from "./landing-page/our-partners";
 import Portfolio from "./landing-page/portfolio";
 import Technologies from "./landing-page/technologies";
 import Testimonials from "./landing-page/testimonials";
@@ -18,7 +18,7 @@ export default function Home() {
         <Technologies />
         <Portfolio />
         <Testimonials />
-        <OurPartners />
+        {/* <OurPartners /> */}
         <ContactUs />
         <Footer />
       </main>
