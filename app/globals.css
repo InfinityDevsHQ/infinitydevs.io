@@ -47,17 +47,33 @@ section {
 }
 /* Animation */
 @keyframes typing {
-  from {
+  0% {
     width: 0%;
   }
-  to {
+  50% {
     width: 100%;
   }
+  100% {
+    width: 0%;
+  }
 }
-
+@keyframes cursor {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .typing {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 2s steps(40, end);
+  animation: typing 4s steps(40, end);
+}
+.cursor {
+  animation: cursor 1s infinite;
 }

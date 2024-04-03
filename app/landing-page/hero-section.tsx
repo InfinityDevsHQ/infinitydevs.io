@@ -11,7 +11,7 @@ export default function HeroSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % wordsToAnimate.length);
-    }, 2000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
   return (
@@ -28,28 +28,33 @@ export default function HeroSection() {
               <ArrowRight size={20} />
             </Link>
             <h1 className="flex flex-col gap-4 mb-3 md:mb-6 lg:mb-8 uppercase  text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl  text-white text-center font-semibold zoomin">
-              <span>
-                <span className="gradient-text">Crafting</span> infinite
+              <span className="gradient-text">
+                <span>Crafting</span> infinite
               </span>
               <span>
                 {wordsToAnimate.map((word, index) => (
                   <>
                     {index === activeIndex && (
-                      <span
-                        key={index}
-                        className={
-                          index === activeIndex
-                            ? "typing max-w-max text-center"
-                            : ""
-                        }
-                      >
-                        {wordsToAnimate[activeIndex]}
+                      <span className="flex items-center gap-2 justify-center">
+                        <span
+                          key={index}
+                          className={
+                            index === activeIndex
+                              ? "max-w-max text-center typing gradient-text"
+                              : ""
+                          }
+                        >
+                          {wordsToAnimate[activeIndex]}
+                        </span>
+                        <span className=" self-stretch block z-50 w-2 bg-gray-600 cursor">
+                          {"   "}
+                        </span>
                       </span>
                     )}
                   </>
                 ))}
               </span>
-              <span>solutions</span>
+              <span className="gradient-text">solutions</span>
             </h1>
             <p className="main-descriptions text-center mb-4 md:mb-8 lg:mb-10">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
