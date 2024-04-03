@@ -8,11 +8,11 @@ export default function HowWeWork() {
         size="h2"
         className="uppercase mb-3 md:mb-6 lg:mb-8 font-bold text-center"
       >
-        <span>Who</span> we are
+        <span>How</span> we work
       </Heading>
       <div className="flex items-center justify-center w-full uppercase text-base sm:text-xl font-bold text-zinc-300">
         <div className="hidden md:grid grid-cols-3 box-max-width items-center justify-items-center">
-          <div className="flex flex-col self-start">
+          <div className="flex flex-col self-start text-right">
             <h2 className="mt-12">1. Requirement Gathering</h2>
             <br />
             <h2 className="mt-80">3. Prototyping</h2>
@@ -21,37 +21,37 @@ export default function HowWeWork() {
           </div>
           <div className="flex flex-col gap-12">
             <Image
-              src={"/work/icon-1.png"}
+              src={"/work/icon-1.svg"}
               alt="Icon"
               width={130}
               height={130}
             />
             <Image
-              src={"/work/icon-2.png"}
+              src={"/work/icon-2.svg"}
               alt="Icon"
               width={130}
               height={130}
             />
             <Image
-              src={"/work/icon-3.png"}
+              src={"/work/icon-3.svg"}
               alt="Icon"
               width={130}
               height={130}
             />
             <Image
-              src={"/work/icon-4.png"}
+              src={"/work/icon-4.svg"}
               alt="Icon"
               width={130}
               height={130}
             />
             <Image
-              src={"/work/icon-5.png"}
+              src={"/work/icon-5.svg"}
               alt="Icon"
               width={130}
               height={130}
             />
             <Image
-              src={"/work/icon-6.png"}
+              src={"/work/icon-6.svg"}
               alt="Icon"
               width={130}
               height={130}

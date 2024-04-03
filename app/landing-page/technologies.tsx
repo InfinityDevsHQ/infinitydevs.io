@@ -1,6 +1,5 @@
 import Heading from "../_components/heading";
 import CodeTechnologies from "./_components/code-texhnologies";
-import Features from "./_components/features";
 
 export default function Technologies() {
   return (
@@ -14,18 +13,10 @@ export default function Technologies() {
             <span>Technologies</span> we work on
           </Heading>
           <p className="main-descriptions text-center">
-            We&apos;re a nationally recognized web design company with a
-            targeted local presence. What does that mean for you? Your site is
-            expertly designed and marketed by professionals who are wizards when
-            it comes to turing users into raving fanatics and generating
-            consistent leads for your business.
-          </p>
-          <p className="main-descriptions text-center mb-4 md:mb-8 lg:mb-10">
-            Design with style provides a full service.
+            Our team specializes in React.js/Next.js, Vue.js, Tailwind CSS, MongoDB, Node.js, Express.js, and Python for crafting innovative software solutions.
           </p>
           <CodeTechnologies />
         </div>
-        <Features />
       </div>
     </section>
   );

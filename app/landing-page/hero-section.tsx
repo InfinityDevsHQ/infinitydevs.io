@@ -17,19 +17,11 @@ export default function HeroSection() {
               <span>What Others Say About Us</span>
               <ArrowRight size={20} />
             </Link>
-            <h1 className="flex flex-col gap-4 mb-3 md:mb-6 lg:mb-8 uppercase  text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl  text-white text-center font-semibold zoomin">
-              <span>
-                <span className="gradient-text">Transform</span> Business with
-              </span>
-              <span>smart and tech savvy</span>
-              <span>solutions</span>
+            <h1 className="flex flex-col gap-4 mb-3 md:mb-6 lg:mb-8 text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl  text-white text-center font-semibold zoomin">
+                <span className="gradient-text">Crafting Infinite Software, Design & Ai Solutions</span>
             </h1>
             <p className="main-descriptions text-center mb-4 md:mb-8 lg:mb-10">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae, nesciunt nobis! Reiciendis
-              <br />
-              voluptate quia sit debitis sint cum, obcaecati veritatis,
-              repudiandae rem maiores in.
+            Empowering your digital future with expert software development and design services.
             </p>
             <Button className="text-center block mx-auto mb-6 md:mb-10 lg:mb-12">
               Book free consultation
