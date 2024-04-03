@@ -1,16 +1,9 @@
 import { Input } from "$/components/ui/input";
 import { Textarea } from "$/components/ui/textarea";
 import { Send } from "lucide-react";
-type Data = {
-  name: string;
-  email: string;
-  message: string;
-};
-export type FormInputsProps = {
-  formData: Data;
-  setFormData: React.Dispatch<React.SetStateAction<Data>>;
-};
-export default function FormInputs({ formData, setFormData }: FormInputsProps) {
+import useContactUs from "$/stores/us-contact-us";
+export default function FormInputs() {
+  const { formData, setFormData } = useContactUs();
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
