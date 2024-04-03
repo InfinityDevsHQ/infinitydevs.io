@@ -2,7 +2,10 @@ import { Input } from "$/components/ui/input";
 import { Textarea } from "$/components/ui/textarea";
 import { Send } from "lucide-react";
 import useContactUs from "$/stores/us-contact-us";
-export default function FormInputs() {
+export type FormInputsProps = {
+  className?: string;
+};
+export default function FormInputs({ className }: FormInputsProps) {
   const { formData, setFormData } = useContactUs();
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -11,7 +14,7 @@ export default function FormInputs() {
     setFormData({ ...formData, [name]: value });
   };
   return (
-    <div className="uppercase flex flex-col gap-6">
+    <div className={`uppercase flex flex-col gap-6 ${className}`}>
       <div className="flex flex-col gap-4">
         <label htmlFor="name">Name</label>
         <Input

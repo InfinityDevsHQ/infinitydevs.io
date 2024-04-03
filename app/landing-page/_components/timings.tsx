@@ -4,7 +4,7 @@ import { Phone } from "lucide-react";
 import { Lock, Clock } from "lucide-react";
 export default function Timings() {
   return (
-    <div>
+    <div className="col-span-2 lg:col-span-1">
       <Heading className="uppercase font-bold mb-4">Contact Us</Heading>
       <p className="mb-2">
         If you have any questions or need any assistance after business hours,
