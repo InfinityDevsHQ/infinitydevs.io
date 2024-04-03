@@ -1,5 +1,5 @@
 import ContactUs from "./landing-page/contact-us";
-import Footer from "./landing-page/footer";
+import Footer from "./_components/footer";
 import HeroSection from "./landing-page/hero-section";
 import HowWeWork from "./landing-page/how-we-work";
 // import OurPartners from "./landing-page/our-partners";
