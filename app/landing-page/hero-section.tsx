@@ -13,7 +13,7 @@ export default function HeroSection() {
       setActiveIndex((prevIndex) => (prevIndex + 1) % wordsToAnimate.length);
     }, 4000);
     return () => clearInterval(interval);
-  }, []);
+  }, [wordsToAnimate.length]);
   return (
     <>
       <section className="overflow-x-hidden relative  h-screen w-screen bg-slate-900">
