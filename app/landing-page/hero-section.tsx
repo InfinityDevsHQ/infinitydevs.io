@@ -1,9 +1,19 @@
+"use client";
 import Button from "$/components/button";
 import Link from "next/link";
 import Straps from "./_components/straps";
 import Header from "../_components/header";
 import { ArrowRight } from "lucide-react";
+import { useEffect, useState } from "react";
 export default function HeroSection() {
+  const wordsToAnimate = ["software", "design", "ai"];
+  const [activeIndex, setActiveIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % wordsToAnimate.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <>
       <section className="overflow-x-hidden relative  h-screen w-screen bg-slate-900">
@@ -19,9 +29,20 @@ export default function HeroSection() {
             </Link>
             <h1 className="flex flex-col gap-4 mb-3 md:mb-6 lg:mb-8 uppercase  text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl  text-white text-center font-semibold zoomin">
               <span>
-                <span className="gradient-text">Transform</span> Business with
+                <span className="gradient-text">Crafting</span> infinite
               </span>
-              <span>smart and tech savvy</span>
+              {wordsToAnimate.map((word, index) => (
+                <>
+                  {index === activeIndex && (
+                    <span
+                      key={index}
+                      className={index === activeIndex ? "typing" : ""}
+                    >
+                      {wordsToAnimate[activeIndex]}
+                    </span>
+                  )}
+                </>
+              ))}
               <span>solutions</span>
             </h1>
             <p className="main-descriptions text-center mb-4 md:mb-8 lg:mb-10">
