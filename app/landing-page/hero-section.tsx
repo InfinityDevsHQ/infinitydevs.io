@@ -57,11 +57,8 @@ export default function HeroSection() {
               <span className="gradient-text">solutions</span>
             </h1>
             <p className="main-descriptions text-center mb-4 md:mb-8 lg:mb-10">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae, nesciunt nobis! Reiciendis
-              <br />
-              voluptate quia sit debitis sint cum, obcaecati veritatis,
-              repudiandae rem maiores in.
+              Empowering your digital future with expert software development
+              and design services.
             </p>
             <Button className="text-center block mx-auto mb-6 md:mb-10 lg:mb-12">
               Book free consultation

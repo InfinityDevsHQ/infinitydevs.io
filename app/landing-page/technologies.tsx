@@ -1,6 +1,5 @@
 import Heading from "../_components/heading";
 import CodeTechnologies from "./_components/code-texhnologies";
-import Features from "./_components/features";
 
 export default function Technologies() {
   return (
@@ -23,7 +22,6 @@ export default function Technologies() {
           </p>
           <CodeTechnologies />
         </div>
-        <Features />
       </div>
     </section>
   );

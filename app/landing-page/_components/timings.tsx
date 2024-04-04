@@ -7,8 +7,9 @@ export default function Timings() {
     <div className="col-span-2 lg:col-span-1">
       <Heading className="uppercase font-bold mb-4">Contact Us</Heading>
       <p className="mb-2">
-        If you have any questions or need any assistance after business hours,
-        please get in touch
+      Get in touch with Infinity Devs today to discuss your software needs and start turning your ideas into reality. 
+      Whether you need a web app, MVP, landing page, or proof of concept, our team of talented developers and designers are here to help. 
+      Reach out to us for top-notch solutions crafted with innovation and expertise.
       </p>
       <div className="grid lg:grid-cols-2 mb-6 uppercase">
         <div className="flex flex-col gap-2">

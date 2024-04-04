@@ -8,27 +8,23 @@ export default function Features() {
       <FeatureCard
         icon={<Lightbulb size={40} />}
         title="Innovative"
-        text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae magni ut
-      commodi eaque impedit, molestias alias quidem maxime veniam sunt,
-      veritatis minima hic, cum voluptatem. Recusandae in nulla consequatur
-      consequuntur!"
+        text="We focuses on enhancing user experience through intuitive interface design and seamless navigation. 
+        We aim to create visually appealing designs that captivate and engage users, ensuring a smooth and enjoyable experience."
       />
       <FeatureCard
         icon={<Code2 size={40} />}
-        title="Marketing"
-        text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae magni ut
-      commodi eaque impedit, molestias alias quidem maxime veniam sunt,
-      veritatis minima hic, cum voluptatem. Recusandae in nulla consequatur
-      consequuntur!"
+        title="Development"
+        text="We provide comprehensive web application development services. 
+        From concept to deployment, our team ensures that your web app is robust, scalable, and user-friendly, 
+        meeting the highest standards of quality and performance."
       />
       <FeatureCard
         icon={<Globe2 size={40} />}
-        title="Development"
-        text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae magni ut
-      commodi eaque impedit, molestias alias quidem maxime veniam sunt,
-      veritatis minima hic, cum voluptatem. Recusandae in nulla consequatur
-      consequuntur!"
+        title="Ai Solutions"
+        text="Our AI solutions harness the power of machine learning and predictive analytics to revolutionize businesses. 
+        By leveraging cutting-edge technology, we provide customized AI solutions to optimize processes and drive innovation."
       />
-    </div>
+    </div>    
+      
   );
 }
