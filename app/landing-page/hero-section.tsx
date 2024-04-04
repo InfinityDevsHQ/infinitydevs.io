@@ -47,12 +47,12 @@ export default function HeroSection() {
                           {wordsToAnimate[activeIndex]}
                         </span>
                         <span className=" self-stretch block z-50 w-2 common-gradient cursor" />
+                        <span className="gradient-text">solutions</span>
                       </span>
                     )}
                   </>
                 ))}
               </span>
-              <span className="gradient-text">solutions</span>
             </h1>
             <p className="main-descriptions text-center mb-4 md:mb-8 lg:mb-10">
               Empowering your digital future with expert software development
