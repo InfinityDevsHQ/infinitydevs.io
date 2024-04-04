@@ -46,9 +46,7 @@ export default function HeroSection() {
                         >
                           {wordsToAnimate[activeIndex]}
                         </span>
-                        <span className=" self-stretch block z-50 w-2 bg-gray-600 cursor">
-                          {"   "}
-                        </span>
+                        <span className=" self-stretch block z-50 w-2 common-gradient cursor" />
                       </span>
                     )}
                   </>
