@@ -4,7 +4,7 @@ export type PillProps = {
 export default function Pill({ label }: PillProps) {
   return (
     <>
-      <span className="p-4 text-zinc-300 font-medium text-lg text-center bg-blue-900/40 rounded-full common-border">
+      <span className="p-4 text-zinc-300 font-medium text-xs xl:text-base text-center bg-blue-900/40 rounded-full common-border">
         {label}
       </span>
     </>
