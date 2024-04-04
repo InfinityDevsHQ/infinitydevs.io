@@ -1,7 +1,15 @@
 import PortfolioCard from "./portfolio-card";
+import Image from "next/image";
 export default function PortfolioGrid() {
   return (
-    <div>
+    <div className="relative">
+      <Image
+        src={"/backgrounds/net.png"}
+        className="absolute w-full h-full z-10"
+        width={0}
+        height={0}
+        alt="backround"
+      />
       <div className="flex items-center justify-center">
         <div className=" lg:mb-12 grid lg:grid-cols-3 3xl:grid-cols-5 gap-12 items-center justify-center justify-items-center">
           <PortfolioCard

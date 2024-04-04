@@ -2,10 +2,18 @@ import Heading from "../_components/heading";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import PortfolioGrid from "./_components/portfolio-grid";
+import Image from "next/image";
 export default function Portfolio() {
   return (
     <section className="bg-slate-900  px-8 py-4">
-      <div className="flex items-center justify-center">
+      <div className="relative flex items-center justify-center net">
+        <Image
+          src={"/backgrounds/net.png"}
+          className="absolute w-full h-full"
+          width={0}
+          height={0}
+          alt="backround"
+        />
         <div>
           <Heading
             size="h2"
