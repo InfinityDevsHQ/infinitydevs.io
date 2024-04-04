@@ -11,7 +11,7 @@ export default function HeroSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % wordsToAnimate.length);
-    }, 4000);
+    }, 8000);
     return () => clearInterval(interval);
   }, [wordsToAnimate.length]);
   return (
