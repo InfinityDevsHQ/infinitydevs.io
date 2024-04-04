@@ -34,7 +34,7 @@ const DUMMYDATA = [
 export default function ReviewsGallery() {
   return (
     <div className="flex items-center justify-center">
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 grid-rows-auto gap-4 items-start">
         {DUMMYDATA.map((review, index) => (
           <Review
             key={index}
