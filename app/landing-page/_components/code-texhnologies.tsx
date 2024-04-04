@@ -45,18 +45,7 @@ export default function CodeTechnologies() {
                 height={200}
               />
             </span>
-          </div>
-        </div>
-        <div className="flex items-center justify-center">
-          <div className="image-flex">
-            <span className="flex items-center justify-center">
-              <Image
-                src={"/technologies/express.png"}
-                alt="Express logo"
-                width={200}
-                height={200}
-              />
-            </span>
+
             <span className="flex items-center justify-center">
               <Image
                 src={"/technologies/python.png"}
