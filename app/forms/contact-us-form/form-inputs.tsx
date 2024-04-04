@@ -23,7 +23,7 @@ export default function FormInputs({ className }: FormInputsProps) {
           onChange={(e) => handleChange(e)}
           placeholder="John Doe"
           required
-          className="bg-blue-900/40 placeholder:text-zinc-400 border border--white/30 outline-none !ring-0 ring-offset-transparent"
+          className="bg-blue-900/40 placeholder:text-zinc-400 border border-white/30"
         />
       </div>
       <div className="flex flex-col gap-4">
@@ -35,7 +35,7 @@ export default function FormInputs({ className }: FormInputsProps) {
           onChange={(e) => handleChange(e)}
           required
           placeholder="someone@domain.com"
-          className="bg-blue-900/40 placeholder:text-zinc-400 border border--white/30 outline-none !ring-0 ring-offset-transparent"
+          className="bg-blue-900/40 placeholder:text-zinc-400 border border-white/30 outline-none !ring-0 ring-offset-transparent"
         />
       </div>
       <div className="flex flex-col gap-4">
@@ -46,13 +46,13 @@ export default function FormInputs({ className }: FormInputsProps) {
           required
           name="message"
           onChange={(e) => handleChange(e)}
-          className="bg-blue-900/40 placeholder:text-zinc-400 border border--white/30 outline-none !ring-0 ring-offset-transparent"
+          className="bg-blue-900/40 placeholder:text-zinc-400 border border-white/30 outline-none !ring-0 ring-offset-transparent"
         />
       </div>
       <button
         type="submit"
         aria-label="form-submit button"
-        className="bg-blue-900/40 flex items-center gap-2 px-4 py-2 self-start rounded-full"
+        className="bg-blue-900/40 flex items-center border border-white/30 gap-2 px-6 py-3 self-start rounded-full"
       >
         <span>SUBMIT</span>
         <span>
