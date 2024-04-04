@@ -79,3 +79,6 @@ section {
 .cursor {
   animation: cursor 1s infinite;
 }
+#how-we-work {
+  background-image: url("/public//backgroundss//Vector.png") !important;
+}
