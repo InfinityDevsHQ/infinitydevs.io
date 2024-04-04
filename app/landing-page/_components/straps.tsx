@@ -9,7 +9,10 @@ export default function Straps() {
           <span className="px-20">mobile apps</span>
           <span className="px-20">web development</span>
         </marquee>
-        <marquee className="strap absolute  top-0 left-0 shadow-lg -rotate-3 flex justify-around">
+        <marquee
+          className="strap absolute  top-0 left-0 shadow-lg -rotate-3 flex justify-around"
+          direction="right"
+        >
           <span className="px-20">ui/ux design</span>
           <span className="px-20">Mobile apps</span>
           <span className="px-20">web development</span>
