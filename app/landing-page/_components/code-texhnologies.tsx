@@ -115,14 +115,21 @@ export default function CodeTechnologies() {
             height={200}
           />
         </span>
-        <span className="flex items-center justify-center">
-          <Image
-            src={"/technologies/vue.png"}
-            alt="vue logo"
-            width={200}
-            height={200}
-          />
-        </span>
+        <div>
+          <span className="flex items-center justify-center">
+            <Image
+              src={"/technologies/vue.png"}
+              alt="vue logo"
+              width={200}
+              height={200}
+            />
+          </span>
+
+          {/* <p className="block w- max-w-max common-border mx-auto items-center justify-between px-2 py-1 mb-3 md:mb-6 lg:mb-8 text-sm text-zinc-300 font-semibold">
+            <span className="p-10">Vue.js</span>
+          </p> */}
+        </div>
+
         <span className="flex items-center justify-center">
           <Image
             src={"/technologies/sass.png"}

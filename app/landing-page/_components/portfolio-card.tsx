@@ -15,7 +15,7 @@ export default function PortfolioCard({
 }: PortfolioCardProps) {
   return (
     <div
-      className={`bg-purple-900/40 rounded-2xl w-80 xl:w-[28rem]  2xl:w-[34rem] 3xl:w-[30rem] ${className}`}
+      className={`bg-purple-900/40 rounded-2xl w-80 xl:w-[23rem]  2xl:w-[34rem] 3xl:w-[30rem] ${className}`}
     >
       <div className="w-full flex items-center justify-center p-4 border-b">
         <Image src={imageUrl} alt={`${imageUrl}`} width={300} height={300} />

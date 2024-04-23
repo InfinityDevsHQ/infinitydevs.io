@@ -24,7 +24,6 @@ export default function Features() {
         text="Our AI solutions harness the power of machine learning and predictive analytics to revolutionize businesses. 
         By leveraging cutting-edge technology, we provide customized AI solutions to optimize processes and drive innovation."
       />
-    </div>    
-      
+    </div>
   );
 }

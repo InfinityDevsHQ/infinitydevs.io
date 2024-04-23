@@ -8,16 +8,19 @@ export default function PortfolioGrid() {
             imageUrl="/portfolio/portfolio-1.png"
             tag="Animation"
             pills={["web development", "react"]}
+            className="lg:hidden 3xl:block"
           />
           <PortfolioCard
             imageUrl="/portfolio/portfolio-2.png"
             tag="Animation"
             pills={["web development", "react"]}
+            className="lg:hidden 3xl:block"
           />
           <PortfolioCard
             imageUrl="/portfolio/portfolio-3.png"
             tag="Animation"
             pills={["web development", "react"]}
+            className="lg:hidden 3xl:block"
           />
           <PortfolioCard
             imageUrl="/portfolio/portfolio-4.png"
@@ -30,6 +33,26 @@ export default function PortfolioGrid() {
             tag="Animation"
             pills={["web development", "react"]}
             className="lg:hidden 3xl:block"
+          />
+        </div>
+      </div>
+      <div className="hidden lg:flex 3xl:hidden items-center justify-center ">
+        <div className="flex gap-12 mb-9">
+          <PortfolioCard
+            imageUrl="/portfolio/portfolio-1.png"
+            tag="Animation"
+            pills={["web development", "react"]}
+          />
+
+          <PortfolioCard
+            imageUrl="/portfolio/portfolio-2.png"
+            tag="Animation"
+            pills={["web development", "react"]}
+          />
+          <PortfolioCard
+            imageUrl="/portfolio/portfolio-3.png"
+            tag="Animation"
+            pills={["web development", "react"]}
           />
         </div>
       </div>

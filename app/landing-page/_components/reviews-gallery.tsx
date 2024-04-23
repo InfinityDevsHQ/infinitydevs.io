@@ -1,7 +1,7 @@
 import Review from "./review";
 export default function ReviewsGallery() {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center black-fade">
       <div className="grid lg:grid-cols-4 gap-4">
         <div className="flex flex-col gap-4">
           <Review
@@ -11,6 +11,14 @@ export default function ReviewsGallery() {
       dignissimos a aut ea! Qui praesentium perspiciatis cumque facilis dolorum
       cupiditate reiciendis aut in, deleniti atque officia voluptatum magnam
       neque totam!"
+          />
+          <Review
+            imageUrl="/client.jpg"
+            name="John Doe"
+            review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
+          totam odio blanditiis temporibus mollitia sapiente dignissimos,
+          reprehenderit, exercitationem dolores quo optio officia ratione
+          repudiandae fuga eaque velit inventore!"
           />
           <Review
             imageUrl="/client.jpg"
@@ -30,6 +38,18 @@ export default function ReviewsGallery() {
           deleniti eveniet consequatur eos quo velit nostrum, impedit voluptatem
           fuga at temporibus harum voluptatum sint repellendus repellat.
           Exercitationem eius ex possimus."
+          />
+          <Review
+            imageUrl="/client.jpg"
+            name="John Doe"
+            review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
+          totam odio blanditiis temporibus molli!"
+          />
+          <Review
+            imageUrl="/client.jpg"
+            name="John Doe"
+            review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
+          totam odio blanditiis temporibus molli!"
           />
           <Review
             imageUrl="/client.jpg"
@@ -57,6 +77,18 @@ export default function ReviewsGallery() {
             review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
           totam odio blanditiis temporibus molli!"
           />
+          <Review
+            imageUrl="/client.jpg"
+            name="John Doe"
+            review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
+          totam odio blanditiis temporibus molli!"
+          />
+          <Review
+            imageUrl="/client.jpg"
+            name="John Doe"
+            review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
+          totam odio blanditiis temporibus molli!"
+          />
         </div>
         <div className="flex flex-col gap-4">
           <Review
@@ -68,6 +100,21 @@ export default function ReviewsGallery() {
             imageUrl="/client.jpg"
             name="John Doe"
             review="Lorem ipsum dolor sit amet consectetur adipisicing"
+          />
+          <Review
+            imageUrl="/client.jpg"
+            name="John Doe"
+            review="Lorem ipsuiis temporibus molli!"
+          />
+          <Review
+            imageUrl="/client.jpg"
+            name="John Doe"
+            review="Lorem ipsuiis temporibus molli!"
+          />
+          <Review
+            imageUrl="/client.jpg"
+            name="John Doe"
+            review="Lorem ipsuiis temporibus molli!"
           />
           <Review
             imageUrl="/client.jpg"

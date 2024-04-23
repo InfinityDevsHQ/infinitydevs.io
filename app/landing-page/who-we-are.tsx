@@ -2,7 +2,6 @@ import Heading from "../_components/heading";
 import Overselves from "./_components/ourselves";
 import Features from "./_components/features";
 
-
 export default function WhoWeAre() {
   return (
     <section className="bg-slate-900 flex flex-col gap-6 px-8 py-4">
@@ -15,10 +14,13 @@ export default function WhoWeAre() {
             <span>who</span> we are
           </Heading>
           <p className="main-descriptions text-center">
-            At Infinity Devs, we are passionate about crafting cutting-edge software solutions that exceed expectations.
-            Our dedicated team of experienced developers and designers collaborate seamlessly to bring your vision to 
-            life with exceptional precision and creativity. Together, we strive to create innovative web apps, MVPs, landing pages, 
-            and proof of concepts, driving your success with top-notch code quality and design expertise.
+            At Infinity Devs, we are passionate about crafting cutting-edge
+            software solutions that exceed expectations. Our dedicated team of
+            experienced developers and designers collaborate seamlessly to bring
+            your vision to life with exceptional precision and creativity.
+            Together, we strive to create innovative web apps, MVPs, landing
+            pages, and proof of concepts, driving your success with top-notch
+            code quality and design expertise.
           </p>
         </div>
       </div>
