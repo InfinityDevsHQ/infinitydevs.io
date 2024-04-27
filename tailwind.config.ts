@@ -30,6 +30,7 @@ const config = {
       },
       screens: {
         "3xl": "2430px",
+        sm: "350px",
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

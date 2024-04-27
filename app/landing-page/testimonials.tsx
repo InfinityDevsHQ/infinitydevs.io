@@ -10,7 +10,8 @@ export default function Testimonials() {
             size="h2"
             className="uppercase mb-3 md:mb-6 lg:mb-8 font-bold text-center"
           >
-            <span>success</span> stories from our clients
+            <span>success</span> stories from{" "}
+            <span className="block text-white">our clients</span>
           </Heading>
           <p className="main-descriptions text-center">
             We&apos;re a nationally recognized web design company with a
