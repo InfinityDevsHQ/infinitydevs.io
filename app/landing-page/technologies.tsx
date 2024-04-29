@@ -13,7 +13,7 @@ export default function Technologies() {
             <span>Technologies</span> we
             <span className="block text-white pt-5"> work on</span>
           </Heading>
-          <p className="main-descriptions text-center">
+          <p className="main-descriptions2 text-center">
             Our team specializes in React.js/Next.js, Vue.js, Tailwind CSS,
             MongoDB, Node.js, Express.js, and Python for crafting innovative
             software solutions.

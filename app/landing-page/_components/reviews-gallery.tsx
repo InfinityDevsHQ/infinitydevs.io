@@ -6,125 +6,39 @@ export default function ReviewsGallery() {
         <div className="flex flex-col gap-4">
           <Review
             imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
-      dignissimos a aut ea! Qui praesentium perspiciatis cumque facilis dolorum
-      cupiditate reiciendis aut in, deleniti atque officia voluptatum magnam
-      neque totam!"
-          />
-          <Review
-            imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
-          totam odio blanditiis temporibus mollitia sapiente dignissimos,
-          reprehenderit, exercitationem dolores quo optio officia ratione
-          repudiandae fuga eaque velit inventore!"
-          />
-          <Review
-            imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
-          totam odio blanditiis temporibus mollitia sapiente dignissimos,
-          reprehenderit, exercitationem dolores quo optio officia ratione
-          repudiandae fuga eaque velit inventore!"
+            name="tylerjjankowski"
+            review="Very clean and professional website built in Next.js. Was built and delivered quickly with the occasional updates on the progress. Any requests for changes or updates was made and made quickly. Would definitely use again in the future for anything React related."
           />
         </div>
         <div className="flex flex-col gap-4">
           <Review
             imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
-          totam odio blanditiis temporibus mtore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-          deleniti eveniet consequatur eos quo velit nostrum, impedit voluptatem
-          fuga at temporibus harum voluptatum sint repellendus repellat.
-          Exercitationem eius ex possimus."
+            name="voguetyre"
+            review="Exceptional work, on time and at a very reasonable price. I would highly recommend to anyone."
           />
           <Review
             imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
-          totam odio blanditiis temporibus molli!"
-          />
-          <Review
-            imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
-          totam odio blanditiis temporibus molli!"
-          />
-          <Review
-            imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
-          totam odio blanditiis temporibus molli!"
+            name="johnmctighe"
+            review="Great communication, I highly recommend working with them, tremendously talented and should be at the top of your list when it comes to web development!"
           />
         </div>
         <div className="flex flex-col gap-4">
           <Review
             imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsum dolor sit amum sint repellendus repellat.
-          Exercitationem eius ex possimus."
+            name="wintermeyer"
+            review="Outstanding work. They worked fast and were happy to fix problems in a revision which I initially didn't communicated. I am a very happy customer."
           />
           <Review
             imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
-          totam odio blanditiis po molli!"
-          />
-          <Review
-            imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
-          totam odio blanditiis temporibus molli!"
-          />
-          <Review
-            imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
-          totam odio blanditiis temporibus molli!"
-          />
-          <Review
-            imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit id
-          totam odio blanditiis temporibus molli!"
+            name="idanvelleman"
+            review="Very responsive and the quality of the work is excellent."
           />
         </div>
         <div className="flex flex-col gap-4">
           <Review
             imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsum dolor sit  sint repellendus repellat."
-          />
-          <Review
-            imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsum dolor sit amet consectetur adipisicing"
-          />
-          <Review
-            imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsuiis temporibus molli!"
-          />
-          <Review
-            imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsuiis temporibus molli!"
-          />
-          <Review
-            imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsuiis temporibus molli!"
-          />
-          <Review
-            imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsuiis temporibus molli!"
-          />
-          <Review
-            imageUrl="/client.jpg"
-            name="John Doe"
-            review="Lorem ipsuiis temporibus molli!"
+            name="brettlawson276"
+            review="They did an amazing job on the Tailwind templates I asked them to put together. They went above and beyond in a number of ways such as adding smooth little animations and overall polish stuff that we had not even considered. Definitely going to be considering them for all future projects."
           />
         </div>
       </div>

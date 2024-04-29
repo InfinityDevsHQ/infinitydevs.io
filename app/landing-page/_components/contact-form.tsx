@@ -16,7 +16,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={(e) => handleSubmit(e)}
-      className="grid lg:grid-cols-2 gap-12 bg-indigo-900/10 border border-blue-400/30 text-zinc-300 px-6 py-4"
+      className="grid lg:grid-cols-2 gap-12 bg-indigo-900/10 border rounded-3xl border-blue-400/30 text-zinc-300 px-6 py-4"
     >
       <Timings />
       <FormInputs formData={formData} setFormData={setFormData} />
