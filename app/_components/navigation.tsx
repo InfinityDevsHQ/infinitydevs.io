@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 export type DesktopNavProps = {
@@ -11,11 +10,23 @@ export default function Navigation({ className }: DesktopNavProps) {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const scrollToTestimonials = () => {
+    const contactSection = document.getElementById("Testimonials");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
-    <nav className={`text-white text-lg capitalize font-bold ${className}`}>
-      <ol className="flex flex-wrap lg:flex-nowrap items-center gap-12 text-center">
+    <nav
+      className={`text-white text-lg capitalize font-bold ${className} absolute top-0 right-0 mt-8 mr-8`}
+    >
+      <ol className="flex items-center gap-12 text-center">
         <li>
           <button>About Us</button>
+        </li>
+        <li>
+          <button onClick={scrollToTestimonials}>Testimonials</button>
         </li>
         <li>
           <button onClick={scrollToContact}>Contact Us</button>

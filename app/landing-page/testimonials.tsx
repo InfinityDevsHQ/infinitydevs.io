@@ -3,7 +3,7 @@ import ReviewsGallery from "./_components/reviews-gallery";
 
 export default function Testimonials() {
   return (
-    <section className="bg-slate-900  px-8 py-4">
+    <section className="bg-slate-900 px-8 py-4" id="Testimonials">
       <div className="flex items-center justify-center">
         <div className="box-max-width">
           <Heading

@@ -19,6 +19,13 @@ export default function Header({ className }: HeaderProps) {
     }
   };
 
+  const scrollToTestimonials = () => {
+    const contactSection = document.getElementById("Testimonials");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const sidebarVariants = {
     open: { x: 0 },
@@ -27,7 +34,7 @@ export default function Header({ className }: HeaderProps) {
 
   return (
     <header
-      className={`flex items-center justify-between w-full  px-4 pt-4 lg:pt-8 ${className}`}
+      className={`flex items-center justify-between w-full px-4 pt-4 lg:pt-8 ${className}`}
     >
       <div>
         <Image
@@ -72,6 +79,11 @@ export default function Header({ className }: HeaderProps) {
                     <ol className="h-full flex flex-col items-center justify-between">
                       <li>
                         <button>About Us</button>
+                      </li>
+                      <li>
+                        <button onClick={scrollToTestimonials}>
+                          Testimonials
+                        </button>
                       </li>
                       <li>
                         <button onClick={scrollToContact}>Contact Us</button>
