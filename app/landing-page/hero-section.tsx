@@ -17,9 +17,7 @@ export default function HeroSection() {
   }, [wordsToAnimate.length]);
   return (
     <>
-      <section
-        className="overflow-x-hidden relative height-hero w-screen bg-slate-900"
-      >
+      <section className="overflow-x-hidden relative height-hero w-screen bg-slate-900">
         <Header className="absolute top-0" />
         <div className="flex items-center justify-center">
           <div className="box-max-width mt-20 lg:mt-40 3xl:mt-96 sm:mt-44">
@@ -30,7 +28,6 @@ export default function HeroSection() {
               <span>What Others Say About Us</span>
               <ArrowRight size={20} />
             </Link>
-
             <h1 className="flex flex-col gap-4 mb-3 md:mb-6 lg:mt-0 text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl  text-white text-center font-semibold zoomin sm:mt-12">
               <span className="gradient-text">Crafting Infinite</span>
               <span>
@@ -49,11 +46,11 @@ export default function HeroSection() {
                           {wordsToAnimate[activeIndex]}
                         </span>
                         <span className=" self-stretch block z-50 w-2 common-gradient cursor" />
+                        <span className="gradient-text">Solutions</span>
                       </span>
                     )}
                   </>
                 ))}
-                <span className="gradient-text">Solutions</span>
               </span>
             </h1>
             <p className="main-descriptions text-center mb-4 md:mb-8 lg:mb-10 sm:mt-12 lg:mt-0">

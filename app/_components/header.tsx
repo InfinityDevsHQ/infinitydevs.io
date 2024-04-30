@@ -12,6 +12,13 @@ export type HeaderProps = {
 };
 
 export default function Header({ className }: HeaderProps) {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact-us");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const sidebarVariants = {
     open: { x: 0 },
@@ -64,22 +71,13 @@ export default function Header({ className }: HeaderProps) {
                   <nav className="flex items-center justify-center h text-zinc-300 text-4xl capitalize font-bold h-full">
                     <ol className="h-full flex flex-col items-center justify-between">
                       <li>
-                        <Link href={"/"}>Home</Link>
+                        <button>About Us</button>
                       </li>
                       <li>
-                        <Link href={"/"}>About Us</Link>
+                        <button onClick={scrollToContact}>Contact Us</button>
                       </li>
                       <li>
-                        <Link href={"/"}>Insights</Link>
-                      </li>
-                      <li>
-                        <Link href={"/"}>Portfolio</Link>
-                      </li>
-                      <li>
-                        <Link href={"/"}>Contact Us</Link>
-                      </li>
-                      <li>
-                        <Link href={"/"}>Careers</Link>
+                        <Link href={"/"}></Link>
                       </li>
                     </ol>
                   </nav>

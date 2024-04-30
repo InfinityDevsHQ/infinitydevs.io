@@ -14,9 +14,9 @@ export default function Technologies() {
             <span className="block text-white pt-5"> work on</span>
           </Heading>
           <p className="main-descriptions2 text-center">
-            Our team specializes in React.js/Next.js, Vue.js, Tailwind CSS,
-            MongoDB, Node.js, Express.js, and Python for crafting innovative
-            software solutions.
+            Our team specializes in Adobe Xd, Figma, HTML, Tailwind CSS,
+            React.js, Next.js, Node js, MomgoDB, Python , Django and PostgreSQL
+            for crafting innovative software solutions.
           </p>
           <CodeTechnologies />
         </div>
