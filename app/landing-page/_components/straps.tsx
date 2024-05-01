@@ -1,6 +1,6 @@
 export default function Straps() {
   return (
-    <div className="absolute w-full">
+    <div className="absolute bottom-9 w-full">
       <div className="relative w-full">
         <div className="strap justify-between">
           <span>web design</span>

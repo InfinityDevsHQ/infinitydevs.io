@@ -103,7 +103,7 @@ export default function ReviewsGallery() {
       <div className="grid lg:grid-cols-4 gap-4">
         {[...Array(4)].map((_, colIndex) => (
           <div key={colIndex}>
-            {ReviewData.slice(colIndex * 5, colIndex * 5 + 5).map(
+            {ReviewData.slice(colIndex * 4, colIndex * 5 + 5).map(
               (review, index) => (
                 <div key={index} className="flex flex-col gap-4 mt-5">
                   <Review
