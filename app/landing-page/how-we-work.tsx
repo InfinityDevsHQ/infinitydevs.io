@@ -3,7 +3,7 @@ import { PlayCircle } from "lucide-react";
 import Image from "next/image";
 export default function HowWeWork() {
   return (
-    <section className="bg-slate-900  px-8 py-4">
+    <section className="px-8 py-4 work-bg">
       <Heading
         size="h2"
         className="uppercase mb-3 md:mb-6 lg:mb-8 font-bold text-center"

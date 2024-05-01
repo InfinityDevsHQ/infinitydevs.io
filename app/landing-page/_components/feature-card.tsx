@@ -8,7 +8,7 @@ export type FeatureCardProps = {
 };
 export default function FeatureCard({ icon, title, text }: FeatureCardProps) {
   return (
-    <div className="flex flex-col items-center gap-6 px-12 py-8 rounded-3xl bg-white">
+    <div className="flex flex-col items-center gap-6 px-12 py-8 rounded-3xl bg-color">
       <span className="flex items-center justify-center common-gradient text-white w-24 h-24 rounded-full">
         {icon}
       </span>

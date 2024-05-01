@@ -5,9 +5,9 @@ export type CardProps = {
   title?: string;
   children: string;
 };
-export default function Card({ icon, title, children }: CardProps) {
+export default function CardVission({ icon, title, children }: CardProps) {
   return (
-    <div className="flex flex-col gap-6 mt-5 items-center card-h px-6 py-4 rounded-3xl text-center bg-purple-900/20 border border-purple-400/30">
+    <div className="flex flex-col gap-6 items-center h-fit px-6 py-10 rounded-3xl text-center bg-slate-800 border border-purple-400/30">
       <span>{icon}</span>
       <Heading size="h2" className="uppercase font-bold">
         {title}
