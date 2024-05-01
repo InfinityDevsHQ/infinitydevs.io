@@ -28,17 +28,17 @@ export default function HeroSection() {
       <section className="overflow-x-hidden relative height-hero w-screen bg-slate-900">
         <Header className="absolute top-0" />
         <div className="flex items-center justify-center">
-          <div className="box-max-width mt-20 lg:mt-40 3xl:mt-96 sm:mt-44">
+          <div className="box-max-width mt-20 lg:mt-28 3xl:mt-96 sm:mt-44">
             <Link
               href={"/"}
-              className="flex max-w-max common-border mx-auto items-center justify-between px-2 py-1 mb-3 md:mb-6 lg:mb-8 text-sm text-zinc-300 font-semibold"
+              className="flex max-w-max common-border mx-auto items-center justify-between px-2 py-1 mb-6 md:mb-6 lg:mb-8 text-sm text-zinc-300 font-semibold"
             >
               <button onClick={scrollToTestimonials}>
                 What Others Say About Us
               </button>
               <ArrowRight size={20} />
             </Link>
-            <h1 className="flex flex-col gap-4 mb-3 md:mb-6 lg:mt-0 text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl  text-white text-center font-semibold zoomin sm:mt-12">
+            <h1 className="flex flex-col gap-4 mb-6 md:mb-6 lg:mb-8 text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl  text-white text-center font-semibold sm:mt-12">
               <span className="gradient-text">Crafting Infinite</span>
               <span>
                 {wordsToAnimate.map((word, index) => (
@@ -63,13 +63,13 @@ export default function HeroSection() {
                 ))}
               </span>
             </h1>
-            <p className="main-descriptions text-center mb-4 md:mb-8 lg:mb-10 sm:mt-12 lg:mt-0">
+            <p className="main-descriptions text-center mb-6 md:mb-6 lg:mb-8 sm:mt-12">
               Empowering your digital future with expert software development
               and design services.
             </p>
             <Button
               scrollTarget="contact-us"
-              className="text-center block mx-auto mb-6 md:mb-10 lg:mb-12"
+              className="text-center block mx-auto mb-6 md:mb-6 lg:mb-8 sm:mt-12"
             >
               Book free consultation
             </Button>
