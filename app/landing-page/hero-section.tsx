@@ -15,6 +15,14 @@ export default function HeroSection() {
     }, 8000);
     return () => clearInterval(interval);
   }, [wordsToAnimate.length]);
+
+  const scrollToTestimonials = () => {
+    const contactSection = document.getElementById("Testimonials");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <section className="overflow-x-hidden relative height-hero w-screen bg-slate-900">
@@ -25,7 +33,9 @@ export default function HeroSection() {
               href={"/"}
               className="flex max-w-max common-border mx-auto items-center justify-between px-2 py-1 mb-3 md:mb-6 lg:mb-8 text-sm text-zinc-300 font-semibold"
             >
-              <span>What Others Say About Us</span>
+              <span onClick={scrollToTestimonials}>
+                What Others Say About Us
+              </span>
               <ArrowRight size={20} />
             </Link>
             <h1 className="flex flex-col gap-4 mb-3 md:mb-6 lg:mt-0 text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl  text-white text-center font-semibold zoomin sm:mt-12">

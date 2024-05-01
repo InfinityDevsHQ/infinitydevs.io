@@ -17,13 +17,21 @@ export default function Navigation({ className }: DesktopNavProps) {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const scrollToAboutUs = () => {
+    const contactSection = document.getElementById("about-us");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav
       className={`text-white text-lg capitalize font-bold ${className} absolute top-0 right-0 mt-10 mr-8`}
     >
       <ol className="flex items-center gap-12 text-center">
         <li>
-          <button>About Us</button>
+          <button onClick={scrollToAboutUs}>About Us</button>
         </li>
         <li>
           <button onClick={scrollToTestimonials}>Testimonials</button>
