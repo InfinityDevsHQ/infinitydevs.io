@@ -10,16 +10,18 @@ export default function Overselves() {
             src={"/cards-images/arrow.png"}
             width={200}
             height={200}
-            alt="Arrow in the bow image"
+            alt="Scope"
           />
         }
         title="Our Mission"
+        className={'bg-purple-900/20'}
       >
-        At Infinity Devs, we are dedicated to empowering individuals and
-        businesses by transforming their ideas into tangible solutions with
-        top-notch code.
+        Our vision at Infinity Devs is to continuously innovate and push the
+        boundaries in software, design, and AI solutions to create endless
+        possibilities.
       </Card>
-      <CardVission
+
+      <Card
         icon={
           <Image
             src={"/cards-images/scope.png"}
@@ -28,12 +30,14 @@ export default function Overselves() {
             alt="Scope"
           />
         }
-        title="Our vision"
+        title="Our Vision"
+        className={' bg-slate-800/80'}
       >
         Our vision at Infinity Devs is to continuously innovate and push the
         boundaries in software, design, and AI solutions to create endless
         possibilities.
-      </CardVission>
+      </Card>
+
       <Card
         icon={
           <Image
@@ -44,6 +48,7 @@ export default function Overselves() {
           />
         }
         title="Our Strategy"
+        className={'bg-purple-900/20'}
       >
         Our strategy at Infinity Devs centers around collaboration, effective
         communication, and ongoing learning to ensure we stay at the forefront

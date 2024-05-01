@@ -4,18 +4,10 @@ import Button from "$/components/button";
 import Link from "next/link";
 import Straps from "./_components/straps";
 import Header from "../_components/header";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Send } from "lucide-react";
+import Typewriter from 'typewriter-effect';
 
 export default function HeroSection() {
-  const wordsToAnimate = ["Software", "Design", "Ai"];
-  const [activeIndex, setActiveIndex] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % wordsToAnimate.length);
-    }, 8000);
-    return () => clearInterval(interval);
-  }, [wordsToAnimate.length]);
-
   const scrollToTestimonials = () => {
     const contactSection = document.getElementById("Testimonials");
     if (contactSection) {
@@ -31,36 +23,26 @@ export default function HeroSection() {
           <div className="box-max-width mt-20 lg:mt-28 3xl:mt-96 sm:mt-44">
             <Link
               href={"/"}
-              className="flex max-w-max common-border mx-auto items-center justify-between px-2 py-1 mb-6 md:mb-6 lg:mb-8 text-sm text-zinc-300 font-semibold"
+              className="flex gap-2.5 max-w-max common-border mx-auto items-center justify-between px-4 py-2 mb-6 md:mb-6 lg:mb-8 text-sm text-zinc-300 font-semibold rounded-full"
             >
               <button onClick={scrollToTestimonials}>
                 What Others Say About Us
               </button>
               <ArrowRight size={20} />
             </Link>
-            <h1 className="flex flex-col gap-4 mb-6 md:mb-6 lg:mb-8 text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl  text-white text-center font-semibold sm:mt-12">
-              <span className="gradient-text">Crafting Infinite</span>
-              <span>
-                {wordsToAnimate.map((word, index) => (
-                  <>
-                    {index === activeIndex && (
-                      <span className="flex items-center gap-2 justify-center">
-                        <span
-                          key={index}
-                          className={
-                            index === activeIndex
-                              ? "max-w-max text-center typing gradient-text"
-                              : ""
-                          }
-                        >
-                          {wordsToAnimate[activeIndex]}
-                        </span>
-                        <span className=" self-stretch block z-50 w-2 common-gradient cursor" />
-                        <span className="gradient-text">Solutions</span>
-                      </span>
-                    )}
-                  </>
-                ))}
+            <h1 className="mb-6 md:mb-6 lg:mb-8 text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl text-white text-center font-bold sm:mt-12 gradient-text !leading-[1.3]">
+              Crafting Infinite {' '} <br />
+              <span className="flex justify-center" >
+                <span className="text-[#ABA9AC]" >
+                  <Typewriter
+                    options={{
+                      strings: ["Software", "Design", "Ai"],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                </span>
+                Solutions
               </span>
             </h1>
             <p className="main-descriptions text-center mb-6 md:mb-6 lg:mb-8 sm:mt-12">
@@ -69,10 +51,13 @@ export default function HeroSection() {
             </p>
             <Button
               scrollTarget="contact-us"
-              className="text-center block mx-auto mb-6 md:mb-6 lg:mb-8 sm:mt-12"
+              className="mx-auto bg-blue-900/40 flex items-center gap-2 px-4 py-2 self-start common-border !rounded-full text-white"
             >
-              Book free consultation
+              Book Consultation
+
+              <Send className="rotate-45" size={20} />
             </Button>
+
           </div>
         </div>
         <Straps />

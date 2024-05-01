@@ -56,12 +56,11 @@ export default function FormInputs({ formData, setFormData }: FormInputsProps) {
       <button
         type="submit"
         aria-label="form-submit button"
-        className="bg-blue-900/40 flex items-center gap-2 px-4 py-2 self-start common-border"
+        className="bg-blue-900/40 flex items-center gap-2 px-4 py-2 self-start common-border rounded-full"
       >
-        <span>SUBMIT</span>
-        <span>
-          <Send className="rotate-45" size={20} />
-        </span>
+        SUBMIT
+
+        <Send className="rotate-45" size={20} />
       </button>
     </div>
   );

@@ -5,9 +5,7 @@ body {
   overflow-x: hidden;
   background-color: #1d1f2c;
 }
-.strap {
-  @apply flex items-center uppercase w-full font-bold sm:h-6 md:h-max p-2 text-xs sm:text-xs md:text-base lg:text-lg bg-neutral-300;
-}
+
 .main-descriptions {
   @apply text-sm md:text-base xl:text-lg 2xl:text-xl text-zinc-300;
 }
@@ -70,7 +68,6 @@ body {
   border: 1px solid transparent;
   background: linear-gradient(#11224f, #11224f) padding-box,
     linear-gradient(to right, #3d81df, #834ad8, #bb41e1) border-box;
-  border-radius: 9999px;
 }
 
 .common-border3 {
@@ -78,7 +75,9 @@ body {
   background: linear-gradient(#11224f, #11224f) padding-box,
     linear-gradient(to right, #3d81df, #834ad8, #bb41e1) border-box;
 }
-
+.strap {
+  @apply flex items-center uppercase w-full font-bold sm:h-6 md:h-max p-1.5 text-xs sm:text-xs md:text-base lg:text-xs common-border !rounded-none text-white;
+}
 .gradient-text,
 h2 span {
   background-image: linear-gradient(to right, #3d81df, #834ad8, #bb41e1);

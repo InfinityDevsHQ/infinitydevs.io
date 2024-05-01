@@ -4,14 +4,14 @@ import Overselves from "./_components/ourselves";
 export default function WhoWeAre() {
   return (
     <section
-      className=" flex flex-col gap-6 px-8 py-4 mb-16 who-bg"
+      className=" flex flex-col gap-10 px-8 py-4 mb-16 who-bg"
       id="about-us"
     >
       <div className="flex items-center justify-center">
-        <div className="box-max-width">
+        <div className="box-max-width flex flex-col gap-10">
           <Heading
             size="h2"
-            className="uppercase mb-3 md:mb-6 lg:mb-8 font-bold text-center"
+            className="uppercase font-bold text-center"
           >
             <span>who</span> we are
           </Heading>

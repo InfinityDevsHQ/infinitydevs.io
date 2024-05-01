@@ -1,3 +1,4 @@
+import { color } from "framer-motion";
 import type { Config } from "tailwindcss";
 
 const config = {
@@ -36,6 +37,16 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      color: {
+        'blue': '#3d81df',
+        'light-velvet': '#834AD8',
+        'purple': '#BB41E1',
+      },
+      backgroundImage: (theme: any) => ({
+        "gradient-primary": `linear-gradient(to right, ${theme(
+          "color.blue"
+        )}, ${theme("color.light-velvet")}, ${theme("color.purple")})`
+      }),
     },
   },
   plugins: [require("tailwindcss-animate")],

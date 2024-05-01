@@ -17,19 +17,17 @@ export default function Timings() {
         <div className="flex flex-col gap-2">
           <p>Location:</p>
           <p className="flex gap-3">
-            <span>
-              <MapPin />
-            </span>
-            <span className="capitalize">lahore, pakistan.</span>
+            <MapPin />
+
+            <span className="capitalize ">lahore, pakistan.</span>
+
           </p>
         </div>
         <div className="flex flex-col gap-2">
           <p>Phone:</p>
           <p className="flex gap-3">
-            <span>
-              <Phone />
-            </span>
-            <span className="capitalize">+92 318 680 7809</span>
+            <Phone />
+            <a href="tel:+923186807809" className="capitalize text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary">+92 318 680 7809</a>
           </p>
         </div>
       </div>
