@@ -4,7 +4,10 @@ import Features from "./_components/features";
 
 export default function WhoWeAre() {
   return (
-    <section className="bg-slate-900 flex flex-col gap-6 px-8 py-4">
+    <section
+      className="bg-slate-900 flex flex-col gap-6 px-8 py-4"
+      id="about-us"
+    >
       <div className="flex items-center justify-center">
         <div className="box-max-width">
           <Heading

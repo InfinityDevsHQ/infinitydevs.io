@@ -1,28 +1,43 @@
-import Link from "next/link";
+import React from "react";
+
 export type DesktopNavProps = {
   className?: string;
 };
 export default function Navigation({ className }: DesktopNavProps) {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact-us");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToTestimonials = () => {
+    const contactSection = document.getElementById("Testimonials");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToAboutUs = () => {
+    const contactSection = document.getElementById("about-us");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <nav className={`text-white text-lg capitalize font-bold ${className}`}>
-      <ol className="flex flex-wrap lg:flex-nowrap items-center gap-12 text-center">
+    <nav
+      className={`text-white text-lg capitalize font-bold ${className} absolute top-0 right-0 mt-10 mr-8`}
+    >
+      <ol className="flex items-center gap-12 text-center">
         <li>
-          <Link href={"/"}>Home</Link>
+          <button onClick={scrollToAboutUs}>About Us</button>
         </li>
         <li>
-          <Link href={"/"}>About Us</Link>
+          <button onClick={scrollToTestimonials}>Testimonials</button>
         </li>
         <li>
-          <Link href={"/"}>Insights</Link>
-        </li>
-        <li>
-          <Link href={"/"}>Portfolio</Link>
-        </li>
-        <li>
-          <Link href={"/"}>Contact Us</Link>
-        </li>
-        <li>
-          <Link href={"/"}>Careers</Link>
+          <button onClick={scrollToContact}>Contact Us</button>
         </li>
       </ol>
     </nav>

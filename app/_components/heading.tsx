@@ -26,7 +26,7 @@ export default function Heading({ children, size = "h2", className }: Headng) {
     case "h4":
       return (
         <h4
-          className={`text-xl lg:text-2xl 2xl:text-3xl text-white  ${className}`}
+          className={`text-xl lg:text-xl 2xl:text-2xl text-white  ${className}`}
         >
           {children}
         </h4>
