@@ -33,14 +33,18 @@ export default function HeroSection() {
             <h1 className="mb-6 md:mb-6 lg:mb-8 text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl text-white text-center font-bold sm:mt-12 gradient-text !leading-[1.3]">
               Crafting Infinite {' '} <br />
               <span className="flex justify-center" >
-                <span className="text-[#ABA9AC]" >
+                <span className="gradient-text pr-2 flex" >
+                  <span className="">{'{'}</span>
                   <Typewriter
                     options={{
                       strings: ["Software", "Design", "Ai"],
                       autoStart: true,
                       loop: true,
+                      cursor: '',
+                      // cursorClassName: ''
                     }}
                   />
+                  <span className="">{'}'}</span>
                 </span>
                 Solutions
               </span>
