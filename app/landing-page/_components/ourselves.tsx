@@ -1,4 +1,5 @@
 import Card from "$/components/card";
+import CardVission from "$/components/card-2";
 import Image from "next/image";
 export default function Overselves() {
   return (
@@ -9,22 +10,17 @@ export default function Overselves() {
             src={"/cards-images/arrow.png"}
             width={200}
             height={200}
-            alt="Arrow in the bow image"
+            alt="Scope"
           />
         }
         title="Our Mission"
+        className={'bg-purple-900/20'}
       >
-        We&apos;re a nationally recognized web design company with a targeted
-        local presence. What does that mean for you? Your site is expertly
-        designed and marketed by professionals who are wizards when it comes to
-        turing users into raving fanatics and generating consistent leads for
-        your business.Design with style provides a full service, in house web
-        design and digital marketing agency with over 13 years of experience in
-        the creative industry. We develop integrated marketing solutions that
-        drive business and boost revenue. We don&apos;t need to outsource your
-        work overseas or to robots. We are real people, with a real passion for
-        what we do.
+        Our vision at Infinity Devs is to continuously innovate and push the
+        boundaries in software, design, and AI solutions to create endless
+        possibilities.
       </Card>
+
       <Card
         icon={
           <Image
@@ -34,19 +30,14 @@ export default function Overselves() {
             alt="Scope"
           />
         }
-        title="Our vision"
+        title="Our Vision"
+        className={' bg-slate-800/80'}
       >
-        We&apos;re a nationally recognized web design company with a targeted
-        local presence. What does that mean for you? Your site is expertly
-        designed and marketed by professionals who are wizards when it comes to
-        turing users into raving fanatics and generating consistent leads for
-        your business.Design with style provides a full service, in house web
-        design and digital marketing agency with over 13 years of experience in
-        the creative industry. We develop integrated marketing solutions that
-        drive business and boost revenue. We don&apos;t need to outsource your
-        work overseas or to robots. We are real people, with a real passion for
-        what we do.
+        Our vision at Infinity Devs is to continuously innovate and push the
+        boundaries in software, design, and AI solutions to create endless
+        possibilities.
       </Card>
+
       <Card
         icon={
           <Image
@@ -57,17 +48,11 @@ export default function Overselves() {
           />
         }
         title="Our Strategy"
+        className={'bg-purple-900/20'}
       >
-        We&apos;re a nationally recognized web design company with a targeted
-        local presence. What does that mean for you? Your site is expertly
-        designed and marketed by professionals who are wizards when it comes to
-        turing users into raving fanatics and generating consistent leads for
-        your business.Design with style provides a full service, in house web
-        design and digital marketing agency with over 13 years of experience in
-        the creative industry. We develop integrated marketing solutions that
-        drive business and boost revenue. We don&apos;t need to outsource your
-        work overseas or to robots. We are real people, with a real passion for
-        what we do.
+        Our strategy at Infinity Devs centers around collaboration, effective
+        communication, and ongoing learning to ensure we stay at the forefront
+        of digital trends and technologies.
       </Card>
     </div>
   );

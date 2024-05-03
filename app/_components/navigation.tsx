@@ -27,17 +27,17 @@ export default function Navigation({ className }: DesktopNavProps) {
 
   return (
     <nav
-      className={`text-white text-lg capitalize font-bold ${className} absolute top-0 right-0 mt-10 mr-8`}
+      className={`text-white text-lg capitalize ${className} absolute top-0 right-0 mt-10 mr-8 `}
     >
       <ol className="flex items-center gap-12 text-center">
         <li>
-          <button onClick={scrollToAboutUs}>About Us</button>
+          <button className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary" onClick={scrollToAboutUs}>About Us</button>
         </li>
         <li>
-          <button onClick={scrollToTestimonials}>Testimonials</button>
+          <button className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary" onClick={scrollToTestimonials}>Testimonials</button>
         </li>
         <li>
-          <button onClick={scrollToContact}>Contact Us</button>
+          <button className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary" onClick={scrollToContact}>Contact Us</button>
         </li>
       </ol>
     </nav>

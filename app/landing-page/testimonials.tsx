@@ -3,15 +3,14 @@ import ReviewsGallery from "./_components/reviews-gallery";
 
 export default function Testimonials() {
   return (
-    <section className="bg-slate-900 px-8 py-4" id="Testimonials">
+    <section className="px-8 py-4 testimonials-bg" id="Testimonials">
       <div className="flex items-center justify-center">
         <div className="box-max-width">
           <Heading
             size="h2"
-            className="uppercase mb-3 md:mb-6 lg:mb-8 font-bold text-center"
+            className="uppercase mb-3 md:mb-6 lg:mb-8 font-bold text-center max-w-[450px] mx-auto"
           >
-            <span>success</span> stories from{" "}
-            <span className="block text-white">our clients</span>
+            <span>success</span> stories from our clients
           </Heading>
           <p className="main-descriptions text-center">
             We&apos;re a nationally recognized web design company with a
