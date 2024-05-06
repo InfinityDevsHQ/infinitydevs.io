@@ -61,7 +61,7 @@ export default function HeroSection() {
             </Button>
           </div>
         </div>
-        <Straps />
+        {/* <Straps /> */}
       </section>
     </>
   );
