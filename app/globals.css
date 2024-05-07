@@ -93,9 +93,9 @@ h2 span {
   color: transparent;
   line-height: 1.2;
 }
-section {
+/* section {
   margin-bottom: 2rem;
-}
+} */
 
 .black-fade {
   -webkit-mask-image: linear-gradient(#000, rgba(0, 0, 0, 0));
