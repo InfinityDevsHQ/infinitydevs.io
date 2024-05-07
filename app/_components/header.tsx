@@ -34,7 +34,7 @@ export default function Header({ className }: HeaderProps) {
 
   return (
     <header
-      className={`flex items-center justify-between w-full px-4 pt-4 lg:pt-8 ${className}`}
+      className={`flex items-center justify-between w-full px-4 py-4 lg:py-8 ${className}`}
     >
       <div>
         <Image
