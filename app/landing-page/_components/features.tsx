@@ -4,7 +4,7 @@ import { Code2 } from "lucide-react";
 import { Globe2 } from "lucide-react";
 export default function Features() {
   return (
-    <div className='grid md:grid-cols-3 gap-4 md:gap-6 lg:gap-10  xl:px-20'>
+    <div className='grid md:grid-cols-3 gap-4 md:gap-6 lg:gap-10 max-w-7xl mx-auto xl:px-20'>
       <FeatureCard
         icon={<Lightbulb size={40} />}
         title='Innovative'

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Linkedin, Twitter, Instagram } from "lucide-react";
 export default function Footer() {
   return (
-    <footer className='px-5 py-8 md:px-8 md:py-12 mx-auto'>
+    <footer className='px-5 py-8 md:px-8 md:py-12 mx-auto max-w-7xl'>
       <div className='px-6 py-4 common-border3 rounded-3xl bg-indigo-900/40'>
         <div className='flex flex-col gap-4 lg:flex-row items-center  justify-between border-b pb-4'>
           <div className='flex items-center justify-center'>

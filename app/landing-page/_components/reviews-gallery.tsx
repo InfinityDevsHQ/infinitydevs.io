@@ -99,13 +99,13 @@ const ReviewData = [
 ];
 export default function ReviewsGallery() {
   return (
-    <div className="flex items-center justify-center black-fade">
-      <div className="grid lg:grid-cols-4 gap-4">
+    <div className='flex items-center justify-center black-fade max-w-7xl mx-auto'>
+      <div className='grid lg:grid-cols-4 gap-4'>
         {[...Array(4)].map((_, colIndex) => (
           <div key={colIndex}>
             {ReviewData.slice(colIndex * 4, colIndex * 5 + 5).map(
               (review, index) => (
-                <div key={index} className="flex flex-col gap-4 mt-5">
+                <div key={index} className='flex flex-col gap-4 mt-5'>
                   <Review
                     imageUrl={review.imgUrl}
                     name={review.clientName}
