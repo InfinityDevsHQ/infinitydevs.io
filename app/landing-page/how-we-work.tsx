@@ -3,7 +3,7 @@ import { PlayCircle } from "lucide-react";
 import Image from "next/image";
 export default function HowWeWork() {
   return (
-    <section className='px-6 py-12 md:px-8 md:py-20 mx-auto work-bg flex flex-col gap-7 md:gap-20'>
+    <section className='px-5 py-8 md:px-8 md:py-12 mx-auto work-bg flex flex-col gap-7 md:gap-20'>
       <div className='flex items-center justify-center'>
         <div className='box-max-width flex flex-col gap-10'>
           <Heading size='h2' className='uppercase mt-10 font-bold text-center'>

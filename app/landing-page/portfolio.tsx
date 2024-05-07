@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import PortfolioGrid from "./_components/portfolio-grid";
 export default function Portfolio() {
   return (
-    <section className='bg-slate-900 px-6 py-12 md:py-20 md:px-8 mx-auto'>
+    <section className='bg-slate-900 px-5 py-8 md:py-12 md:px-8 mx-auto'>
       <div className='flex items-center justify-center'>
         <div>
           <Heading

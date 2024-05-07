@@ -4,7 +4,7 @@ import Features from "./_components/features";
 
 export default function Technologies() {
   return (
-    <section className='px-6 py-12 md:px-8 md:py-20 mx-auto'>
+    <section className='px-5 py-8 md:px-8 md:py-12 mx-auto'>
       <div className='flex flex-col gap-12 items-center justify-center'>
         <div className='box-max-width flex flex-col gap-10'>
           <Heading

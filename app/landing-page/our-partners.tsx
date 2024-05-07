@@ -3,7 +3,7 @@ import Partners from "./_components/partners";
 
 export default function OurPartners() {
   return (
-    <section className='bg-slate-900 md:px-8 md:py-20 px-6 py-12 mx-auto'>
+    <section className='bg-slate-900 md:px-8 md:py-12 px-5 py-8 mx-auto'>
       <div className='flex items-center justify-center'>
         <div className='box-max-width'>
           <Heading

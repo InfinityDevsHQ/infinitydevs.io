@@ -3,13 +3,13 @@ import CardVission from "$/components/card-2";
 import Image from "next/image";
 export default function Overselves() {
   return (
-    <div className='grid md:grid-cols-3 gap-10'>
+    <div className='grid md:grid-cols-3 gap-4 md:gap-6 lg:gap-10  xl:px-20 '>
       <Card
         icon={
           <Image
             src={"/cards-images/arrow.png"}
-            width={200}
-            height={200}
+            width={164}
+            height={164}
             alt='Scope'
           />
         }
@@ -25,8 +25,8 @@ export default function Overselves() {
         icon={
           <Image
             src={"/cards-images/scope.png"}
-            width={200}
-            height={200}
+            width={164}
+            height={164}
             alt='Scope'
           />
         }
@@ -42,8 +42,8 @@ export default function Overselves() {
         icon={
           <Image
             src={"/cards-images/settings.png"}
-            width={200}
-            height={200}
+            width={164}
+            height={164}
             alt='Settings'
           />
         }

@@ -4,7 +4,7 @@ import Overselves from "./_components/ourselves";
 export default function WhoWeAre() {
   return (
     <section
-      className=' flex flex-col gap-8 px-6 py-12 md:px-16 md:py-20 mx-auto who-bg'
+      className=' flex flex-col gap-8 px-5 py-8 md:px-12 md:py-12 mx-auto who-bg'
       id='about-us'
     >
       <div className='flex items-center justify-center'>
