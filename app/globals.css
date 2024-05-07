@@ -157,7 +157,7 @@ h2 span {
 
 .work-bg {
   background-image: url("../public//infinity_logo_blured.png");
-  background-size: cover;
+  /* background-size: cover; */
   background-position: center;
   background-repeat: no-repeat;
   /* height: 1250px; */
