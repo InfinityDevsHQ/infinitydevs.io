@@ -20,23 +20,23 @@ export default function Footer() {
             <Link
               href={"https://www.linkedin.com/company/infinitydevshq/"}
               target='_blank'
-              className='common-gradient hover:-translate-y-1.5 transition duration-300  p-4 rounded-full'
+              className='common-gradient hover:-translate-y-1.5 transition duration-300 p-2  md:p-3 rounded-full'
             >
-              <Linkedin size={32} fill='transparent' />
+              <Linkedin size={28} fill='transparent' />
             </Link>
             <Link
               href={"https://twitter.com/InfinityDevsHQ"}
               target='_blank'
-              className='common-gradient hover:-translate-y-1.5 transition duration-300  p-4 rounded-full'
+              className='common-gradient hover:-translate-y-1.5 transition duration-300 p-2  md:p-3 rounded-full'
             >
-              <Twitter size={32} fill='transparent' />
+              <Twitter size={28} fill='transparent' />
             </Link>
             <Link
               href={"https://www.instagram.com/infinitydevshq"}
               target='_blank'
-              className='common-gradient hover:-translate-y-1.5 transition duration-300   p-4 rounded-full'
+              className='common-gradient hover:-translate-y-1.5 transition duration-300 p-2   md:p-3 rounded-full'
             >
-              <Instagram size={32} fill='transparent' />
+              <Instagram size={28} fill='transparent' />
             </Link>
           </div>
         </div>
