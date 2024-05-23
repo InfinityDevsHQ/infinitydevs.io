@@ -6,6 +6,7 @@ import Straps from "./_components/straps";
 import Header from "../../app/_components/header";
 import { ArrowRight, Send } from "lucide-react";
 import Typewriter from "typewriter-effect";
+import smoothScroll from "$/app/utils/smoothScroll";
 
 export default function HeroSection() {
   const scrollToTestimonials = () => {
@@ -21,15 +22,15 @@ export default function HeroSection() {
         <Header className="absolute top-0" />
         <div className="flex items-center justify-center">
           <div className="box-max-width mt-20 lg:mt-28 3xl:mt-96 sm:mt-44">
-            <Link
-              href={"/"}
-              className="flex gap-2.5 max-w-max common-border mx-auto items-center justify-between px-4 py-2 mb-6 md:mb-6 lg:mb-8 text-sm text-zinc-300 font-semibold rounded-full"
-            >
-              <button onClick={scrollToTestimonials}>
+            <span className="flex gap-2.5 max-w-max common-border mx-auto items-center justify-between px-4 py-2 mb-6 md:mb-6 lg:mb-8 text-sm text-zinc-300 font-semibold rounded-full">
+              <button
+                type="button"
+                onClick={() => smoothScroll({ sectionId: "Testimonials" })}
+              >
                 What Others Say About Us
               </button>
               <ArrowRight size={20} />
-            </Link>
+            </span>
             <h1 className="mb-6 md:mb-6 lg:mb-8 text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl text-white text-center font-bold sm:mt-12 gradient-text !leading-[1.3]">
               Crafting Infinite <br />
               <span className="flex justify-center">

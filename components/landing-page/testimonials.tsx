@@ -4,7 +4,7 @@ import ReviewsGallery from "./_components/reviews-gallery";
 export default function Testimonials() {
   return (
     <section
-      className="px-5 py-8 mx-auto md:px-8 md:py-12 mx-auto testimonials-bg"
+      className="px-5 py-8 mx-auto md:px-8 md:py-12 testimonials-bg"
       id="Testimonials"
     >
       <div className="flex items-center justify-center">
