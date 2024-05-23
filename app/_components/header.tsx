@@ -65,10 +65,11 @@ export default function Header({ className }: HeaderProps) {
                   <nav className="flex items-center justify-center text-zinc-300 text-4xl capitalize font-bold h-full">
                     <ol className="h-full flex flex-col items-center justify-center gap-14">
                       <li>
-                        <button>About Us</button>
+                        <button type="button">About Us</button>
                       </li>
                       <li>
                         <button
+                          type="button"
                           onClick={() =>
                             smoothScroll({ sectionId: "Testimonials" })
                           }
@@ -78,6 +79,7 @@ export default function Header({ className }: HeaderProps) {
                       </li>
                       <li>
                         <button
+                          type="button"
                           onClick={() =>
                             smoothScroll({ sectionId: "contact-us" })
                           }

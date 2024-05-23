@@ -21,6 +21,7 @@ export default function Navigation({ className }: DesktopNavProps) {
         </li>
         <li>
           <button
+            type="button"
             className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary"
             onClick={() => smoothScroll({ sectionId: "Testimonials" })}
           >
@@ -29,6 +30,7 @@ export default function Navigation({ className }: DesktopNavProps) {
         </li>
         <li>
           <button
+            type="button"
             className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary mr-8"
             onClick={() => smoothScroll({ sectionId: "contact-us" })}
           >
