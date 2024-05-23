@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function CodeTechnologies() {
   return (
     <>
-      <div className="lg:flex justify-center sm:hidden md:flex gap-16 items-center">
+      <div className="flex justify-center gap-16 items-center">
         <div className="image-flex">
           <span className="flex items-center justify-center">
             <Image
@@ -24,14 +24,78 @@ export default function CodeTechnologies() {
           </span>
         </div>
       </div>
-      <div className="justify-center flex lg:hidden gap-6 items-center">
+
+      <div className="grid grid-cols-6 gap-16 items-center">
+        <div className="image-flex">
+          <span className="flex items-center justify-center">
+            <Image
+              src={"/technologies/HTML.png"}
+              alt="html logo"
+              width={120}
+              height={120}
+            />
+          </span>
+        </div>
+        <div className="image-flex">
+          <span className="flex items-center justify-center">
+            <Image
+              src={"/technologies/tailwind_css_logo.png"}
+              alt="tailwind css logo"
+              width={120}
+              height={120}
+            />
+          </span>
+        </div>
+        <div className="image-flex">
+          <span className="flex items-center justify-center">
+            <Image
+              src={"/technologies/React.png"}
+              alt="reactjs logo"
+              width={120}
+              height={120}
+            />
+          </span>
+        </div>
+        <div className="image-flex">
+          <span className="flex items-center justify-center filter invert">
+            <Image
+              src={"/technologies/Next js.png"}
+              alt="Nextjs logo"
+              width={120}
+              height={120}
+            />
+          </span>
+        </div>
+        <div className="image-flex">
+          <span className="flex items-center justify-center">
+            <Image
+              src={"/technologies/nodejs.png"}
+              alt="nodejs logo"
+              width={120}
+              height={120}
+            />
+          </span>
+        </div>
+        <div className="image-flex">
+          <span className="flex items-center justify-center">
+            <Image
+              src={"/technologies/mangodb.png"}
+              alt="mongodb logo"
+              width={120}
+              height={120}
+            />
+          </span>
+        </div>
+      </div>
+
+      <div className="flex justify-center gap-16 items-center">
         <div className="image-flex">
           <span className="flex items-center justify-center">
             <Image
               src={"/technologies/python_logo.png"}
               alt="python logo"
-              width={60}
-              height={60}
+              width={120}
+              height={120}
             />
           </span>
         </div>
@@ -40,8 +104,8 @@ export default function CodeTechnologies() {
             <Image
               src={"/technologies/django_logo.png"}
               alt="django logo"
-              width={60}
-              height={60}
+              width={120}
+              height={120}
             />
           </span>
         </div>
@@ -50,8 +114,8 @@ export default function CodeTechnologies() {
             <Image
               src={"/technologies/postgresql.png"}
               alt="postgresql logo"
-              width={60}
-              height={60}
+              width={120}
+              height={120}
             />
           </span>
         </div>
