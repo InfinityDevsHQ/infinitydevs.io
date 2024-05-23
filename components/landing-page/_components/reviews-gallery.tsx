@@ -1,4 +1,12 @@
 import React from "react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "$/components/ui/carousel";
+
 import Review from "./review";
 const ReviewData = [
   {
@@ -100,7 +108,7 @@ const ReviewData = [
 export default function ReviewsGallery() {
   return (
     <div className="flex items-center justify-center black-fade max-w-7xl mx-auto">
-      <div className="grid lg:grid-cols-4 gap-4">
+      <div className="lg:grid lg:grid-cols-4 gap-4 hidden">
         {[...Array(4)].map((_, colIndex) => (
           <div key={colIndex}>
             {ReviewData.slice(colIndex * 4, colIndex * 5 + 5).map(
@@ -117,6 +125,27 @@ export default function ReviewsGallery() {
           </div>
         ))}
       </div>
+      <Carousel
+        className="max-w-full lg:hidden"
+        opts={{
+          loop: true,
+        }}
+      >
+        <CarouselContent>
+          {ReviewData.map((review, index) => (
+            <CarouselItem
+              key={index}
+              className="flex justify-center items-center"
+            >
+              <Review
+                review={review.review}
+                name={review.clientName}
+                imageUrl={review.imgUrl}
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
     </div>
   );
 }
