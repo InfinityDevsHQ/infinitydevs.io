@@ -1,5 +1,5 @@
 import Heading from "../../app/_components/heading";
-import Overselves from "./_components/ourselves";
+import AboutUs from "./_components/ourselves";
 
 export default function WhoWeAre() {
   return (
@@ -23,7 +23,7 @@ export default function WhoWeAre() {
           </p>
         </div>
       </div>
-      <Overselves />
+      <AboutUs />
     </section>
   );
 }

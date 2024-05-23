@@ -1,6 +1,6 @@
 import Card from "$/components/card";
 import Image from "next/image";
-export default function Overselves() {
+export default function AboutUs() {
   return (
     <div className="grid md:grid-cols-3 gap-4 md:gap-6 lg:gap-10 max-w-7xl mx-auto xl:px-20">
       <Card
