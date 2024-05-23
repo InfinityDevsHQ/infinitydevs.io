@@ -34,23 +34,23 @@ export default function Header({ className }: HeaderProps) {
 
   return (
     <header
-      className={`flex items-center justify-between w-full px-4 pt-4 lg:pt-8 ${className}`}
+      className={`flex items-center justify-between w-full px-4 py-4 lg:py-8 ${className}`}
     >
       <div>
         <Image
           src={"/logo-light.png"}
           width={200}
           height={200}
-          alt="Infinity Devs Logo"
+          alt='Infinity Devs Logo'
         />
       </div>
-      <DesktopNav className="hidden lg:block" />
+      <DesktopNav className='hidden lg:block' />
       <div>
-        <div className="lg:hidden">
+        <div className='lg:hidden'>
           <button
-            aria-label="Sidebar-menu-open-button"
-            type="button"
-            className="text-white font-bold"
+            aria-label='Sidebar-menu-open-button'
+            type='button'
+            className='text-white font-bold'
             onClick={() => setSidebarOpen(true)}
           >
             <Menu size={32} />
@@ -58,25 +58,25 @@ export default function Header({ className }: HeaderProps) {
           <AnimatePresence>
             {sidebarOpen && (
               <motion.div
-                className="flex fixed top-0 z-50 right-0 h-screen w-screen"
-                initial="closed"
-                animate="open"
-                exit="closed"
+                className='flex fixed top-0 z-50 right-0 h-screen w-screen'
+                initial='closed'
+                animate='open'
+                exit='closed'
                 variants={sidebarVariants}
               >
-                <div className="bg-gray-900  h-full w-full">
-                  <div className="px-6 py-4">
+                <div className='bg-gray-900  h-full w-full'>
+                  <div className='px-6 py-4'>
                     <button
-                      aria-label="Sidebar menu close button"
-                      type="button"
-                      className="text-white text-4xl w-full"
+                      aria-label='Sidebar menu close button'
+                      type='button'
+                      className='text-white text-4xl w-full flex justify-end'
                       onClick={() => setSidebarOpen(false)}
                     >
                       <X size={32} />
                     </button>
                   </div>
-                  <nav className="flex items-center justify-center text-zinc-300 text-4xl capitalize font-bold h-full">
-                    <ol className="h-full flex flex-col items-center justify-between">
+                  <nav className='flex items-center justify-center text-zinc-300 text-4xl capitalize font-bold h-full'>
+                    <ol className='h-full flex flex-col items-center justify-center gap-14'>
                       <li>
                         <button>About Us</button>
                       </li>

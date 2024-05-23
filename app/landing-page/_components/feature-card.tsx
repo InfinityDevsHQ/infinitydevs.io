@@ -8,14 +8,17 @@ export type FeatureCardProps = {
 };
 export default function FeatureCard({ icon, title, text }: FeatureCardProps) {
   return (
-    <div className="flex flex-col items-center gap-6 px-12 py-8 rounded-3xl bg-color">
-      <span className="flex items-center justify-center common-gradient text-white w-24 h-24 rounded-full">
+    <div className='bg-color flex flex-col gap-5 sm:gap-6 sm:mt-5 items-center px-2 lg:px-0 py-6 rounded-3xl text-center'>
+      <span className='flex items-center justify-center common-gradient text-white w-24 h-24 rounded-full'>
         {icon}
       </span>
-      <Heading size="h3" className="font-bold uppercase text-zinc-700">
+      <Heading
+        size='h3'
+        className='font-bold uppercase text-center text-zinc-700'
+      >
         {title}
       </Heading>
-      <p className="text-center">{text}</p>
+      <p className='text-center px-2 sm:px-6 md:px-8 text-center'>{text}</p>
     </div>
   );
 }
