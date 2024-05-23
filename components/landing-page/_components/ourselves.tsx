@@ -10,6 +10,7 @@ export default function AboutUs() {
             width={164}
             height={164}
             alt="Scope"
+            className="w-20 h-20 lg:w-40 lg:h-40"
           />
         }
         title="Our Mission"
@@ -27,6 +28,7 @@ export default function AboutUs() {
             width={164}
             height={164}
             alt="Scope"
+            className="w-20 h-20 lg:w-40 lg:h-40"
           />
         }
         title="Our Vision"
@@ -44,6 +46,7 @@ export default function AboutUs() {
             width={164}
             height={164}
             alt="Settings"
+            className="w-20 h-20 lg:w-40 lg:h-40"
           />
         }
         title="Our Strategy"
