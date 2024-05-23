@@ -116,6 +116,7 @@ export default function Header({ className }: HeaderProps) {
           </AnimatePresence>
         </div>
       </div>
+      <DesktopNav className="hidden lg:flex" />
     </header>
   );
 }
