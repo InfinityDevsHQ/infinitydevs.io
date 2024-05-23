@@ -4,7 +4,7 @@ import smoothScroll from "../utils/smoothScroll";
 export type DesktopNavProps = {
   className?: string;
 };
-export default function Navigation({ className }: DesktopNavProps) {
+export default function DesktopNav({ className }: DesktopNavProps) {
   return (
     <nav
       className={`text-white text-lg capitalize ${className} absolute top-0 right-0 mt-10 mr-10 `}

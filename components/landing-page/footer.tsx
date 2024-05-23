@@ -1,6 +1,6 @@
 import Image from "next/image";
-import DesktopNav from "../../app/_components/navigation";
 import Link from "next/link";
+import DesktopNav from "$/app/_components/navigation";
 import { Linkedin, Twitter, Instagram } from "lucide-react";
 export default function Footer() {
   return (

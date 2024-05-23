@@ -1,7 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
 import Button from "$/components/button";
-import Link from "next/link";
 import Straps from "./_components/straps";
 import Header from "../../app/_components/header";
 import { ArrowRight, Send } from "lucide-react";
@@ -9,13 +7,6 @@ import Typewriter from "typewriter-effect";
 import smoothScroll from "$/app/utils/smoothScroll";
 
 export default function HeroSection() {
-  const scrollToTestimonials = () => {
-    const contactSection = document.getElementById("Testimonials");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <>
       <section className="overflow-x-hidden relative h-screen w-screen hero-bg mx-auto md:pt-10 md:pb-20 md:px-8 px-5 py-8  ">
@@ -42,7 +33,6 @@ export default function HeroSection() {
                       autoStart: true,
                       loop: true,
                       cursor: "",
-                      // cursorClassName: ''
                     }}
                   />
                   <span className="">{"}"}</span>

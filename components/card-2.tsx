@@ -5,7 +5,7 @@ export type CardProps = {
   title?: string;
   children: string;
 };
-export default function CardVission({ icon, title, children }: CardProps) {
+export default function CardVision({ icon, title, children }: CardProps) {
   return (
     <div className="flex flex-col gap-6 items-center px-6 py-6 rounded-3xl text-center bg-slate-800 border border-purple-400/30">
       <span>{icon}</span>
