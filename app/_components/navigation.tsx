@@ -6,9 +6,7 @@ export type DesktopNavProps = {
 };
 export default function DesktopNav({ className }: DesktopNavProps) {
   return (
-    <nav
-      className={`text-white text-lg capitalize ${className} absolute top-0 right-0 mt-10 mr-10 `}
-    >
+    <nav className={`text-white text-lg capitalize px-3 ${className || ""}`}>
       <ol className="flex items-center gap-12 text-center">
         <li>
           <button
