@@ -40,7 +40,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <p className="main-description text-zinc-300 text-center pt-4 ">
+        <p className="main-description text-zinc-300 text-center pt-4 text-sm lg:text-base">
           Infinity Devs &copy; 2024, All Rights Reserved
         </p>
       </div>
