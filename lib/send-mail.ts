@@ -1,13 +1,14 @@
 "use serer";
-import nodemailer from "nodemailer";
+
 const NEXT_PUBLIC_HOST = process.env.NEXT_PUBLIC_HOST;
 const NEXT_PUBLIC_USERNAME = process.env.NEXT_PUBLIC_USERNAME;
 const NEXT_PUBLIC_PASSWORD = process.env.NEXT_PUBLIC_PASSWORD;
 const NEXT_PUBLIC_RECEIVER = process.env.NEXT_PUBLIC_RECEIVER;
+import nodemailer from "nodemailer";
 const transporter = nodemailer.createTransport({
   service: "gmail",
   host: NEXT_PUBLIC_HOST,
-  port: 587,
+  port: 465,
   secure: true,
   auth: {
     user: NEXT_PUBLIC_USERNAME,
@@ -15,7 +16,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export async function sendSubscriberData({
+export async function sendMail({
   email,
   subject,
   text,

@@ -1,8 +1,7 @@
 "use client";
-import { Send } from "lucide-react";
+import { Loader, Send } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { Input } from "../ui/input";
-import FormInputs from "../landing-page/_components/form-inputs";
 import Timings from "../landing-page/_components/timings";
 import { Textarea } from "../ui/textarea";
 import {
@@ -14,6 +13,7 @@ import {
 } from "../ui/form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { sendMail } from "$/lib/send-mail";
 const contactFormSchema = z.object({
   name: z.string().min(3, { message: "Name must be 3 characters long." }),
   email: z.string().email({ message: "Please Enter a valid email address" }),
@@ -30,8 +30,14 @@ export default function ContactForm() {
       message: "",
     },
   });
+  const isLoading = form.formState.isSubmitting;
   async function onSubmit(values: z.infer<typeof contactFormSchema>) {
     console.log(values);
+    // const res = sendMail({
+    //   email: values.email,
+    //   subject: "New Contact Us Form Submission",
+    //   text: `Name: ${values.name}\nEmail: ${values.email}\nMessage: ${values.message}`,
+    // });
   }
   return (
     <Form {...form}>
@@ -105,7 +111,11 @@ export default function ContactForm() {
             className="bg-blue-900/40 flex items-center gap-2 px-4 py-2 self-start common-border rounded-full"
           >
             SUBMIT
-            <Send className="rotate-45" size={20} />
+            {isLoading ? (
+              <Loader size={20} className="animate-spin" />
+            ) : (
+              <Send className="rotate-45" size={20} />
+            )}
           </button>
         </div>
       </form>
