@@ -14,6 +14,7 @@ import {
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { sendMail } from "$/lib/send-mail";
+import { toast } from "sonner";
 const contactFormSchema = z.object({
   name: z.string().min(3, { message: "Name must be 3 characters long." }),
   email: z.string().email({ message: "Please Enter a valid email address" }),
@@ -32,11 +33,15 @@ export default function ContactForm() {
   });
   const isLoading = form.formState.isSubmitting;
   async function onSubmit(values: z.infer<typeof contactFormSchema>) {
-    const res = sendMail({
+    try {
+    } catch (error) {}
+    const res = await sendMail({
       email: values.email,
       subject: "New Contact Us Form Submission",
       text: `Name: ${values.name}\nEmail: ${values.email}\nMessage: ${values.message}`,
     });
+    if (res?.messageId) toast.success("Message Sent Successfully");
+    if (!res?.messageId) toast.error("Failed To send Message");
   }
 
   return (

@@ -1,5 +1,6 @@
 "use server";
 import nodemailer from "nodemailer";
+import { toast } from "sonner";
 
 const NEXT_PUBLIC_HOST = process.env.NEXT_PUBLIC_HOST;
 const NEXT_PUBLIC_USERNAME = process.env.NEXT_PUBLIC_USERNAME;
@@ -41,6 +42,5 @@ export async function sendMail({
     return info;
   } catch (error) {
     console.error("Error sending email", error);
-    throw error;
   }
 }
