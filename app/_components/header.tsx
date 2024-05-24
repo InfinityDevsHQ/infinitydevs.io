@@ -33,8 +33,8 @@ export default function Header({ className }: HeaderProps) {
         />
         <Image
           src={"/logo-light.png"}
-          width={100}
-          height={100}
+          width={150}
+          height={150}
           className="lg:hidden"
           alt="Infinity Devs Logo"
         />
@@ -48,7 +48,7 @@ export default function Header({ className }: HeaderProps) {
             className="text-white font-bold mr-12"
             onClick={() => setSidebarOpen(true)}
           >
-            <Menu size={32} />
+            <Menu size={20} />
           </button>
           <AnimatePresence>
             {sidebarOpen && (
