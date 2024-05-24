@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import Link from "next/link";
+import smoothScroll from "$/app/utils/smoothScroll";
 
 export type ButtonProps = {
   children: ReactNode;
@@ -15,19 +16,6 @@ export default function Button({
   disabled = false,
   scrollTarget,
 }: ButtonProps) {
-  const handleClick = () => {
-    if (scrollTarget) {
-      const targetElement = document.getElementById(scrollTarget);
-      if (targetElement) {
-        const offset = targetElement.offsetTop;
-        window.scrollTo({
-          top: offset,
-          behavior: "smooth",
-        });
-      }
-    }
-  };
-
   return scrollTarget ? (
     <button
       className={`px-4 py-2 bg-blue-600 ${
@@ -35,7 +23,11 @@ export default function Button({
       } hover:bg-blue-400 transition-all text-base font-semibold rounded-md text-white ${className}`}
       type={type}
       disabled={disabled}
-      onClick={handleClick}
+      onClick={() =>
+        smoothScroll({
+          sectionId: scrollTarget,
+        })
+      }
     >
       {children}
     </button>

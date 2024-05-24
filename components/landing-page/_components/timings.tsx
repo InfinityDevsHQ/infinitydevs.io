@@ -13,21 +13,24 @@ export default function Timings() {
         designers are here to help. Reach out to us for top-notch solutions
         crafted with innovation and expertise.
       </p>
-      <div className="grid lg:grid-cols-2 mb-6 uppercase">
+      <div className="grid lg:grid-cols-2 mb-6 uppercase gap-3 lg:gap-0">
         <div className="flex flex-col gap-2">
           <p>Location:</p>
           <p className="flex gap-3">
             <MapPin />
-
             <span className="capitalize ">lahore, pakistan.</span>
-
           </p>
         </div>
         <div className="flex flex-col gap-2">
           <p>Phone:</p>
           <p className="flex gap-3">
             <Phone />
-            <a href="tel:+923186807809" className="capitalize text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary">+92 318 680 7809</a>
+            <a
+              href="tel:+923186807809"
+              className="capitalize text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary"
+            >
+              +92 318 680 7809
+            </a>
           </p>
         </div>
       </div>

@@ -1,6 +1,6 @@
 "use client";
-import FormInputs from "./form-inputs";
-import Timings from "./timings";
+import FormInputs from "../landing-page/_components/form-inputs";
+import Timings from "../landing-page/_components/timings";
 import { useState } from "react";
 export default function ContactForm() {
   const [formData, setFormData] = useState({

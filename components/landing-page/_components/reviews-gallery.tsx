@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "$/components/ui/carousel";
+
 import Review from "./review";
 const ReviewData = [
   {
@@ -99,33 +105,13 @@ const ReviewData = [
 ];
 export default function ReviewsGallery() {
   return (
-    // <div className='flex items-center justify-center black-fade max-w-7xl mx-auto'>
-    //   <div className='grid lg:grid-cols-4 gap-4'>
-    //     {[...Array(4)].map((_, colIndex) => (
-    //       <div key={colIndex}>
-    //         {ReviewData.slice(colIndex * 4, colIndex * 5 + 5).map(
-    //           (review, index) => (
-    //             <div key={index} className='flex flex-col gap-4 mt-5'>
-    //               <Review
-    //                 imageUrl={review.imgUrl}
-    //                 name={review.clientName}
-    //                 review={review.review}
-    //               />
-    //             </div>
-    //           )
-    //         )}
-    //       </div>
-    //     ))}
-    //   </div>
-    // </div>
-
-    <div className='flex items-center justify-center black-fade max-w-7xl mx-auto'>
-      <div className='grid lg:grid-cols-4 gap-4'>
+    <div className="flex items-center justify-center black-fade max-w-7xl mx-auto">
+      <div className="lg:grid lg:grid-cols-4 gap-4 hidden">
         {[...Array(4)].map((_, colIndex) => (
-          <div key={colIndex} className='hidden lg:block'>
+          <div key={colIndex}>
             {ReviewData.slice(colIndex * 4, colIndex * 5 + 5).map(
               (review, index) => (
-                <div key={index} className='flex flex-col gap-4 mt-5'>
+                <div key={index} className="flex flex-col gap-4 mt-5">
                   <Review
                     imageUrl={review.imgUrl}
                     name={review.clientName}
@@ -136,18 +122,28 @@ export default function ReviewsGallery() {
             )}
           </div>
         ))}
-        <div className='lg:hidden grid grid-cols-1 gap-4'>
-          {ReviewData.slice(0, 5).map((review, index) => (
-            <div key={index} className='flex flex-col gap-4 mt-5'>
-              <Review
-                imageUrl={review.imgUrl}
-                name={review.clientName}
-                review={review.review}
-              />
-            </div>
-          ))}
-        </div>
       </div>
+      <Carousel
+        className="max-w-full lg:hidden"
+        opts={{
+          loop: true,
+        }}
+      >
+        <CarouselContent>
+          {ReviewData.map((review, index) => (
+            <CarouselItem
+              key={index}
+              className="flex justify-center items-center"
+            >
+              <Review
+                review={review.review}
+                name={review.clientName}
+                imageUrl={review.imgUrl}
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
     </div>
   );
 }

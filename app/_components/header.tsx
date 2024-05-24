@@ -6,26 +6,13 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import DesktopNav from "./navigation";
+import smoothScroll from "../utils/smoothScroll";
 
 export type HeaderProps = {
   className?: string;
 };
 
 export default function Header({ className }: HeaderProps) {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById("contact-us");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const scrollToTestimonials = () => {
-    const contactSection = document.getElementById("Testimonials");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const sidebarVariants = {
     open: { x: 0 },
@@ -41,16 +28,24 @@ export default function Header({ className }: HeaderProps) {
           src={"/logo-light.png"}
           width={200}
           height={200}
-          alt='Infinity Devs Logo'
+          className="hidden lg:inline-block"
+          alt="Infinity Devs Logo"
+        />
+        <Image
+          src={"/logo-light.png"}
+          width={100}
+          height={100}
+          className="lg:hidden"
+          alt="Infinity Devs Logo"
         />
       </div>
-      <DesktopNav className='hidden lg:block' />
+
       <div>
-        <div className='lg:hidden'>
+        <div className="lg:hidden">
           <button
-            aria-label='Sidebar-menu-open-button'
-            type='button'
-            className='text-white font-bold'
+            aria-label="Sidebar-menu-open-button"
+            type="button"
+            className="text-white font-bold mr-12"
             onClick={() => setSidebarOpen(true)}
           >
             <Menu size={32} />
@@ -58,35 +53,57 @@ export default function Header({ className }: HeaderProps) {
           <AnimatePresence>
             {sidebarOpen && (
               <motion.div
-                className='flex fixed top-0 z-50 right-0 h-screen w-screen'
-                initial='closed'
-                animate='open'
-                exit='closed'
+                className="flex fixed top-0 z-50 right-0 h-screen w-screen"
+                initial="closed"
+                animate="open"
+                exit="closed"
                 variants={sidebarVariants}
               >
-                <div className='bg-gray-900  h-full w-full'>
-                  <div className='px-6 py-4'>
+                <div className="bg-gray-900  h-full w-full">
+                  <div className="px-6 py-4">
                     <button
-                      aria-label='Sidebar menu close button'
-                      type='button'
-                      className='text-white text-4xl w-full flex justify-end'
+                      aria-label="Sidebar menu close button"
+                      type="button"
+                      className="text-white text-4xl w-full flex justify-end"
                       onClick={() => setSidebarOpen(false)}
                     >
                       <X size={32} />
                     </button>
                   </div>
-                  <nav className='flex items-center justify-center text-zinc-300 text-4xl capitalize font-bold h-full'>
-                    <ol className='h-full flex flex-col items-center justify-center gap-14'>
+                  <nav className="flex items-center justify-center text-zinc-300 text-4xl capitalize font-bold h-full">
+                    <ol className="h-full flex flex-col items-center justify-center gap-14">
                       <li>
-                        <button>About Us</button>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            smoothScroll({ sectionId: "about-us" });
+                            setSidebarOpen(false);
+                          }}
+                        >
+                          About Us
+                        </button>
                       </li>
                       <li>
-                        <button onClick={scrollToTestimonials}>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            smoothScroll({ sectionId: "Testimonials" });
+                            setSidebarOpen(false);
+                          }}
+                        >
                           Testimonials
                         </button>
                       </li>
                       <li>
-                        <button onClick={scrollToContact}>Contact Us</button>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            smoothScroll({ sectionId: "contact-us" });
+                            setSidebarOpen(false);
+                          }}
+                        >
+                          Contact Us
+                        </button>
                       </li>
                       <li>
                         <Link href={"/"}></Link>
@@ -99,6 +116,7 @@ export default function Header({ className }: HeaderProps) {
           </AnimatePresence>
         </div>
       </div>
+      <DesktopNav className="hidden lg:flex" />
     </header>
   );
 }
