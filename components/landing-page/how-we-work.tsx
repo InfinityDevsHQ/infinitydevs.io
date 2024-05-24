@@ -1,5 +1,4 @@
 import Heading from "../../app/_components/heading";
-import { PlayCircle } from "lucide-react";
 import Image from "next/image";
 export default function HowWeWork() {
   return (
@@ -46,28 +45,28 @@ export default function HowWeWork() {
             <h2 className="mt-64">6. Deliver to the client</h2>
           </div>
         </div>
-        <div className="flex md:hidden flex-col h-[550px] gap-12 max-width-[900px]">
+        <div className="flex md:hidden flex-col h-[550px] gap-12 max-width-[900px] work-bg-phone">
           <div className="flex justify-between gap-4 items-center sm:gap-10">
             <h3>1. Requirement Gathering</h3>
             <Image src={"/work/icon-1.png"} alt="Icon" width={48} height={48} />
           </div>
-          <div className="flex  justify-between items-center sm:gap-10">
+          <div className="flex justify-between items-center sm:gap-10">
             <Image src={"/work/icon-2.png"} alt="Icon" width={48} height={48} />
             <h3>2. Brain Storming</h3>
           </div>
-          <div className="flex  justify-between items-center sm:gap-10">
+          <div className="flex justify-between items-center sm:gap-10">
             <h3>3. Prototyping</h3>
             <Image src={"/work/icon-3.png"} alt="Icon" width={48} height={48} />
           </div>
-          <div className="flex  justify-between items-center sm:gap-10">
+          <div className="flex justify-between items-center sm:gap-10">
             <Image src={"/work/icon-4.png"} alt="Icon" width={48} height={48} />
             <h3>4. Development</h3>
           </div>
-          <div className="flex  justify-between items-center sm:gap-10">
+          <div className="flex justify-between items-center sm:gap-10">
             <h3>5. Testing</h3>
             <Image src={"/work/icon-5.png"} alt="Icon" width={48} height={48} />
           </div>
-          <div className="flex  justify-between items-center sm:gap-10">
+          <div className="flex justify-between items-center sm:gap-10">
             <Image src={"/work/icon-6.png"} alt="Icon" width={52} height={52} />
             <h3>6. Deliver to client</h3>
           </div>
