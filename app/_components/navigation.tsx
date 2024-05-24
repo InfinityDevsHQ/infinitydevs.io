@@ -6,8 +6,8 @@ export type DesktopNavProps = {
 };
 export default function DesktopNav({ className }: DesktopNavProps) {
   return (
-    <nav className={`text-white text-lg capitalize px-3 ${className || ""}`}>
-      <ol className="flex items-center gap-12 text-center">
+    <nav className={`text-white text-lg capitalize ${className || ""}`}>
+      <ol className="flex items-center justify-between gap-16 text-center">
         <li>
           <button
             type="button"
@@ -29,7 +29,7 @@ export default function DesktopNav({ className }: DesktopNavProps) {
         <li>
           <button
             type="button"
-            className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary mr-8"
+            className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary self-end"
             onClick={() => smoothScroll({ sectionId: "contact-us" })}
           >
             Contact Us

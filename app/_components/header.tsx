@@ -21,7 +21,7 @@ export default function Header({ className }: HeaderProps) {
 
   return (
     <header
-      className={`flex items-center justify-between w-full px-4 py-4 lg:py-8 ${className}`}
+      className={`flex left-0 items-center justify-between w-full px-4 py-4 lg:py-8 ${className}`}
     >
       <div>
         <Image
@@ -116,7 +116,7 @@ export default function Header({ className }: HeaderProps) {
           </AnimatePresence>
         </div>
       </div>
-      <DesktopNav className="hidden lg:flex" />
+      <DesktopNav className="hidden lg:flex justify-between" />
     </header>
   );
 }

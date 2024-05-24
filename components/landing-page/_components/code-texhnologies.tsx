@@ -25,7 +25,7 @@ export default function CodeTechnologies() {
         </div>
       </div>
 
-      <div className="flex gap-16 items-center">
+      <div className="flex gap-8 lg:gap-16 items-center">
         <div className="image-flex">
           <span className="flex items-center justify-center">
             <Image
