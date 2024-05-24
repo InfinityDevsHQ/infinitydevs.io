@@ -40,6 +40,7 @@ export default function ContactForm() {
       subject: "New Contact Us Form Submission",
       text: `Name: ${values.name}\nEmail: ${values.email}\nMessage: ${values.message}`,
     });
+    console.log(res);
     if (res?.messageId) toast.success("Message Sent Successfully");
     if (!res?.messageId) toast.error("Failed To send Message");
   }
