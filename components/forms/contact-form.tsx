@@ -32,13 +32,13 @@ export default function ContactForm() {
   });
   const isLoading = form.formState.isSubmitting;
   async function onSubmit(values: z.infer<typeof contactFormSchema>) {
-    console.log(values);
-    // const res = sendMail({
-    //   email: values.email,
-    //   subject: "New Contact Us Form Submission",
-    //   text: `Name: ${values.name}\nEmail: ${values.email}\nMessage: ${values.message}`,
-    // });
+    const res = sendMail({
+      email: values.email,
+      subject: "New Contact Us Form Submission",
+      text: `Name: ${values.name}\nEmail: ${values.email}\nMessage: ${values.message}`,
+    });
   }
+
   return (
     <Form {...form}>
       <form
