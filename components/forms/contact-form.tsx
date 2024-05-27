@@ -41,7 +41,98 @@ export default function ContactForm() {
       text: `Name: ${values.name}\nEmail: ${values.email}\nMessage: ${values.message}`,
     });
     console.log(res);
-    if (res?.messageId) toast.success("Message Sent Successfully");
+    if (res?.messageId) {
+      toast.success("Message Sent Successfully");
+      const res = await sendMail({
+        email: process.env.NEXT_PUBLIC_RECEIVER || "",
+        sendTo: values.email,
+        subject: "Thank You Letter from Infinity Devs",
+        html: `<!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Contact Us Response</title>
+            <style>
+              body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                color: #333;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+              }
+              .container {
+                width: 80%;
+                margin: 0 auto;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              }
+              .header {
+                text-align: center;
+                padding-bottom: 20px;
+              }
+              .header h1 {
+                margin: 0;
+                background-image: linear-gradient(to right, #3d81df, #834ad8, #bb41e1);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                line-height: 1.2;
+              }
+              .content {
+                margin-bottom: 20px;
+              }
+              .footer {
+                text-align: center;
+                padding-top: 20px;
+                border-top: 1px solid #e4e4e4;
+                font-size: 0.9em;
+                color: #777;
+              }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="header">
+                <h1>Thank You for Contacting Us!</h1>
+              </div>
+              <div class="content">
+                <p>Dear ${values.name},</p>
+                <p>
+                  Thank you for reaching out to us. We have received your message and
+                  our team will get back to you as soon as possible.
+                </p>
+                <p><strong>Your Message:</strong></p>
+                <p>
+                ${values.message}
+                </p>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
+                pariatur consequatur quas eaque nesciunt sit. Ipsa error vero, totam
+                quasi, est voluptate labore assumenda, laudantium tempora explicabo
+                laboriosam laborum asperiores.
+                </p>
+              </div>
+              <div class="footer">
+                <p>Best regards,</p>
+                <p>Infinity Devs</p>
+                <a href='https://infinitydevs.io/'>infinitydevs.io</a>
+                <p><a href="mailto:${process.env.NEXT_PUBLIC_RECEIVER}">${process.env.NEXT_PUBLIC_RECEIVER}</a></p>
+              </div>
+            </div>
+          </body>
+        </html>
+        `,
+      });
+      console.log("Here it is ", res);
+    }
     if (!res?.messageId) toast.error("Failed To send Message");
   }
 

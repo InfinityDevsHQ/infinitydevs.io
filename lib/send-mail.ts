@@ -23,16 +23,18 @@ export async function sendMail({
   subject,
   text,
   html,
+  sendTo,
 }: {
   email: string;
   subject: string;
-  text: string;
+  text?: string;
   html?: string;
+  sendTo?: string;
 }) {
   try {
     const info = await transporter.sendMail({
       from: email,
-      to: NEXT_PUBLIC_RECEIVER,
+      to: sendTo || NEXT_PUBLIC_RECEIVER,
       subject: subject,
       text: text,
       html: html || "",
