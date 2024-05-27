@@ -133,7 +133,7 @@ export default function ReviewsGallery() {
           {ReviewData.map((review, index) => (
             <CarouselItem
               key={index}
-              className="flex justify-center items-center basis-1/2"
+              className="flex justify-center items-center basis-4/5  gAp-16"
             >
               <Review
                 review={review.review}

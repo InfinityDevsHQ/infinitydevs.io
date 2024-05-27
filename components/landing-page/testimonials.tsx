@@ -1,6 +1,5 @@
-import Heading from "../../app/_components/heading";
 import ReviewsGallery from "./_components/reviews-gallery";
-
+import Heading from "$/app/_components/heading";
 export default function Testimonials() {
   return (
     <section
