@@ -45,7 +45,7 @@ export default function Header({ className }: HeaderProps) {
           <button
             aria-label="Sidebar-menu-open-button"
             type="button"
-            className="text-white font-bold mr-12"
+            className="text-white font-bold"
             onClick={() => setSidebarOpen(true)}
           >
             <Menu size={20} />
