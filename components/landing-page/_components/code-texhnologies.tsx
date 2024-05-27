@@ -10,6 +10,14 @@ export default function CodeTechnologies() {
               alt="Adobe Xd logo"
               width={120}
               height={120}
+              className="hidden lg:inline-block"
+            />
+            <Image
+              src={"/technologies/Adobe Xd.png"}
+              alt="Adobe Xd logo"
+              width={29}
+              height={29}
+              className="lg:hidden"
             />
           </span>
         </div>
@@ -20,6 +28,14 @@ export default function CodeTechnologies() {
               alt="figma logo"
               width={120}
               height={120}
+              className="hidden lg:inline-block"
+            />
+            <Image
+              src={"/technologies/figma.png"}
+              alt="figma logo"
+              width={29}
+              height={29}
+              className="lg:hidden"
             />
           </span>
         </div>
@@ -96,6 +112,14 @@ export default function CodeTechnologies() {
               alt="python logo"
               width={120}
               height={120}
+              className="hidden lg:inline-block"
+            />
+            <Image
+              src={"/technologies/python_logo.png"}
+              alt="python logo"
+              width={29}
+              height={29}
+              className="lg:hidden"
             />
           </span>
         </div>
@@ -106,6 +130,14 @@ export default function CodeTechnologies() {
               alt="django logo"
               width={120}
               height={120}
+              className="hidden lg:inline-block"
+            />
+            <Image
+              src={"/technologies/django_logo.png"}
+              alt="django logo"
+              width={29}
+              height={29}
+              className="lg:hidden"
             />
           </span>
         </div>
@@ -116,6 +148,14 @@ export default function CodeTechnologies() {
               alt="postgresql logo"
               width={120}
               height={120}
+              className="hidden lg:inline-block"
+            />
+            <Image
+              src={"/technologies/postgresql.png"}
+              alt="postgresql logo"
+              width={29}
+              height={29}
+              className="lg:hidden"
             />
           </span>
         </div>
