@@ -70,8 +70,8 @@ export default function Header({ className }: HeaderProps) {
                       <X size={32} />
                     </button>
                   </div>
-                  <nav className="flex items-center justify-center text-zinc-300 text-4xl capitalize font-bold h-full">
-                    <ol className="h-full flex flex-col items-center justify-center gap-14">
+                  <nav className="flex items-center justify-center text-zinc-300 text-2xl capitalize font-bold h-full">
+                    <ol className="h-full flex flex-col items-center justify-center gap-14 mb-24">
                       <li>
                         <button
                           type="button"
@@ -105,9 +105,9 @@ export default function Header({ className }: HeaderProps) {
                           Contact Us
                         </button>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link href={"/"}></Link>
-                      </li>
+                      </li> */}
                     </ol>
                   </nav>
                 </div>
