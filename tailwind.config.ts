@@ -1,5 +1,5 @@
-import { color } from "framer-motion";
-import type { Config } from "tailwindcss";
+import { color } from "framer-motion"
+import type { Config } from "tailwindcss"
 
 const config = {
   darkMode: ["class"],
@@ -29,27 +29,24 @@ const config = {
           to: { height: "0" },
         },
       },
-      screens: {
-        "3xl": "2430px",
-        sm: "350px",
-      },
+
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       color: {
-        'blue': '#3d81df',
-        'light-velvet': '#834AD8',
-        'purple': '#BB41E1',
+        blue: "#3d81df",
+        "light-velvet": "#834AD8",
+        purple: "#BB41E1",
       },
       backgroundImage: (theme: any) => ({
         "gradient-primary": `linear-gradient(to right, ${theme(
           "color.blue"
-        )}, ${theme("color.light-velvet")}, ${theme("color.purple")})`
+        )}, ${theme("color.light-velvet")}, ${theme("color.purple")})`,
       }),
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+} satisfies Config
 
-export default config;
+export default config

@@ -1,165 +1,98 @@
-import Image from "next/image";
+import Image from "next/image"
+
 export default function CodeTechnologies() {
   return (
-    <>
-      <div className="flex justify-center gap-16 items-center">
-        <div className="image-flex">
-          <span className="flex items-center justify-center">
-            <Image
-              src={"/technologies/Adobe Xd.png"}
-              alt="Adobe Xd logo"
-              width={120}
-              height={120}
-              className="hidden lg:inline-block"
-            />
-            <Image
-              src={"/technologies/Adobe Xd.png"}
-              alt="Adobe Xd logo"
-              width={29}
-              height={29}
-              className="lg:hidden"
-            />
-          </span>
-        </div>
-        <div className="image-flex">
-          <span className="flex items-center justify-center">
-            <Image
-              src={"/technologies/figma.png"}
-              alt="figma logo"
-              width={120}
-              height={120}
-              className="hidden lg:inline-block"
-            />
-            <Image
-              src={"/technologies/figma.png"}
-              alt="figma logo"
-              width={29}
-              height={29}
-              className="lg:hidden"
-            />
-          </span>
-        </div>
+    <div className="flex flex-col gap-7 sm:gap-16 py-8 sm:py-14">
+      <div className="flex gap-6 sm:gap-10 justify-center items-center">
+        <Image
+          alt="xd logo"
+          width={100}
+          height={100}
+          className="w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+          src={"/technologies/xd.svg"}
+        />
+        <Image
+          alt="figma logo"
+          width={100}
+          height={100}
+          className="w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+          src={"/technologies/figma.svg"}
+        />
+        <Image
+          alt="postgres logo"
+          width={100}
+          height={100}
+          className="sm:hidden w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+          src={"/technologies/postgres.svg"}
+        />
       </div>
-
-      <div className="flex gap-8 lg:gap-16 items-center">
-        <div className="image-flex">
-          <span className="flex items-center justify-center">
-            <Image
-              src={"/technologies/HTML.png"}
-              alt="html logo"
-              width={120}
-              height={120}
-            />
-          </span>
-        </div>
-        <div className="image-flex">
-          <span className="flex items-center justify-center">
-            <Image
-              src={"/technologies/tailwind_css_logo.png"}
-              alt="tailwind css logo"
-              width={120}
-              height={120}
-            />
-          </span>
-        </div>
-        <div className="image-flex">
-          <span className="flex items-center justify-center">
-            <Image
-              src={"/technologies/React.png"}
-              alt="reactjs logo"
-              width={120}
-              height={120}
-            />
-          </span>
-        </div>
-        <div className="image-flex">
-          <span className="flex items-center justify-center filter invert">
-            <Image
-              src={"/technologies/Next js.png"}
-              alt="Nextjs logo"
-              width={120}
-              height={120}
-            />
-          </span>
-        </div>
-        <div className="image-flex">
-          <span className="flex items-center justify-center">
-            <Image
-              src={"/technologies/nodejs.png"}
-              alt="nodejs logo"
-              width={120}
-              height={120}
-            />
-          </span>
-        </div>
-        <div className="image-flex">
-          <span className="flex items-center justify-center">
-            <Image
-              src={"/technologies/mangodb.png"}
-              alt="mongodb logo"
-              width={120}
-              height={120}
-            />
-          </span>
-        </div>
+      <div className="flex gap-4 sm:gap-10 justify-center items-center">
+        <Image
+          className="w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+          alt="html"
+          width={100}
+          height={100}
+          src={"/technologies/html.svg"}
+        />
+        <Image
+          className="w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+          alt="tailwind logo"
+          width={100}
+          height={100}
+          src={"/technologies/tailwind.svg"}
+        />
+        <Image
+          alt="js logo"
+          width={100}
+          height={100}
+          className="w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+          src={"/technologies/js.svg"}
+        />
+        <Image
+          alt="react logo"
+          width={100}
+          height={100}
+          className="w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+          src={"/technologies/react.svg"}
+        />
+        <Image
+          alt="next logo"
+          width={100}
+          height={100}
+          className="w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+          src={"/technologies/next.svg"}
+        />
+        <Image
+          alt="postgres logo"
+          width={100}
+          height={100}
+          className="hidden sm:block w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+          src={"/technologies/postgres.svg"}
+        />
       </div>
-
-      <div className="flex justify-center gap-16 items-center">
-        <div className="image-flex">
-          <span className="flex items-center justify-center">
-            <Image
-              src={"/technologies/python_logo.png"}
-              alt="python logo"
-              width={120}
-              height={120}
-              className="hidden lg:inline-block"
-            />
-            <Image
-              src={"/technologies/python_logo.png"}
-              alt="python logo"
-              width={29}
-              height={29}
-              className="lg:hidden"
-            />
-          </span>
-        </div>
-        <div className="image-flex">
-          <span className="flex items-center justify-center">
-            <Image
-              src={"/technologies/django_logo.png"}
-              alt="django logo"
-              width={120}
-              height={120}
-              className="hidden lg:inline-block"
-            />
-            <Image
-              src={"/technologies/django_logo.png"}
-              alt="django logo"
-              width={29}
-              height={29}
-              className="lg:hidden"
-            />
-          </span>
-        </div>
-        <div className="image-flex">
-          <span className="flex items-center justify-center">
-            <Image
-              src={"/technologies/postgresql.png"}
-              alt="postgresql logo"
-              width={120}
-              height={120}
-              className="hidden lg:inline-block"
-            />
-            <Image
-              src={"/technologies/postgresql.png"}
-              alt="postgresql logo"
-              width={29}
-              height={29}
-              className="lg:hidden"
-            />
-          </span>
-        </div>
+      <div className="flex gap-6 sm:gap-10 justify-center items-center">
+        <Image
+          alt="django logo"
+          width={100}
+          height={100}
+          className="w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+          src={"/technologies/dj.svg"}
+        />
+        <Image
+          alt="python logo"
+          width={100}
+          height={100}
+          className="w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+          src={"/technologies/python.svg"}
+        />
+        <Image
+          alt="mongodb logo"
+          width={100}
+          height={100}
+          className="w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+          src={"/technologies/mongodb.svg"}
+        />
       </div>
-    </>
-  );
+    </div>
+  )
 }
