@@ -12,7 +12,7 @@ export default function HeroSection() {
       <section className="overflow-x-hidden relative h-screen w-screen hero-bg mx-auto md:pt-10 md:pb-20 md:px-8 px-5 py-8">
         <Header className="absolute top-0" />
         <div className="flex items-center justify-center">
-          <div className="box-max-width mt-20 lg:mt-28 3xl:mt-96 sm:mt-44">
+          <div className="box-max-width mt-32 md:mt-20 lg:mt-28 3xl:mt-96 sm:mt-40 space-y-14">
             <span className="flex gap-2.5 max-w-max common-border mx-auto items-center justify-between px-4 py-2 mb-6 md:mb-6 lg:mb-8 text-sm text-zinc-300 font-semibold rounded-full">
               <button
                 type="button"
