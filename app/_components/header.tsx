@@ -21,7 +21,7 @@ export default function Header({ className }: HeaderProps) {
 
   return (
     <header
-      className={`flex left-0 items-end justify-between w-full px-4 py-4 lg:py-8 ${className}`}
+      className={`flex left-0 items-end justify-between w-full px-4 md:px-10 lg:px-12 py-4 lg:py-8 ${className}`}
     >
       <div>
         <Image
@@ -45,7 +45,7 @@ export default function Header({ className }: HeaderProps) {
           <button
             aria-label="Sidebar-menu-open-button"
             type="button"
-            className="text-white font-bold pt-1"
+            className="text-white font-bold pt-1 mt-1"
             onClick={() => setSidebarOpen(true)}
           >
             <Menu className="w-full" />

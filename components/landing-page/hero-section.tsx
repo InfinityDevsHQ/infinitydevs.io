@@ -1,10 +1,10 @@
-"use client";
-import Button from "$/components/button";
-import Straps from "./_components/straps";
-import Header from "$/app/_components/header";
-import { ArrowRight, Send } from "lucide-react";
-import Typewriter from "typewriter-effect";
-import smoothScroll from "$/app/utils/smoothScroll";
+"use client"
+import Button from "$/components/button"
+import Straps from "./_components/straps"
+import Header from "$/app/_components/header"
+import { ArrowRight, Send } from "lucide-react"
+import Typewriter from "typewriter-effect"
+import smoothScroll from "$/app/utils/smoothScroll"
 
 export default function HeroSection() {
   return (
@@ -55,5 +55,5 @@ export default function HeroSection() {
         {/* <Straps /> */}
       </section>
     </>
-  );
+  )
 }
