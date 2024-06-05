@@ -1,20 +1,15 @@
-import React from "react";
-import smoothScroll from "../utils/smoothScroll";
-import smoothScroll from "../utils/smoothScroll";
+import React from "react"
+import smoothScroll from "../utils/smoothScroll"
 
 export type DesktopNavProps = {
-  className?: string;
-};
-export default function DesktopNav({ className }: DesktopNavProps) {
+  className?: string
+}
 export default function DesktopNav({ className }: DesktopNavProps) {
   return (
     <nav className={`text-white text-lg capitalize ${className || ""}`}>
-      <ol className="flex items-center justify-between gap-16 text-center">
+      <ol className="flex items-center justify-between gap-12 xl:gap-16 text-center">
         <li>
           <button
-            type="button"
-            className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary"
-            onClick={() => smoothScroll({ sectionId: "about-us" })}
             type="button"
             className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary"
             onClick={() => smoothScroll({ sectionId: "about-us" })}
@@ -24,9 +19,6 @@ export default function DesktopNav({ className }: DesktopNavProps) {
         </li>
         <li>
           <button
-            type="button"
-            className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary"
-            onClick={() => smoothScroll({ sectionId: "Testimonials" })}
             type="button"
             className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary"
             onClick={() => smoothScroll({ sectionId: "Testimonials" })}
@@ -45,5 +37,5 @@ export default function DesktopNav({ className }: DesktopNavProps) {
         </li>
       </ol>
     </nav>
-  );
+  )
 }
