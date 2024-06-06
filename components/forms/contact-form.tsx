@@ -15,6 +15,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { sendMail } from "$/lib/send-mail";
 import { toast } from "sonner";
+import { Label } from "../ui/label";
 const contactFormSchema = z.object({
   name: z.string().min(3, { message: "Name must be 3 characters long." }),
   email: z.string().email({ message: "Please Enter a valid email address" }),
@@ -143,7 +144,7 @@ export default function ContactForm() {
         <Timings />
         <div className="uppercase flex flex-col gap-6">
           <div className="flex flex-col gap-4">
-            <label htmlFor="name">Name</label>
+            <Label htmlFor="name">Name</Label>
             <FormField
               control={form.control}
               name="name"
@@ -162,7 +163,7 @@ export default function ContactForm() {
             />
           </div>
           <div className="flex flex-col gap-4">
-            <label htmlFor="email">Email</label>
+            <Label htmlFor="email">Email</Label>
 
             <FormField
               control={form.control}
@@ -182,7 +183,7 @@ export default function ContactForm() {
             />
           </div>
           <div className="flex flex-col gap-4">
-            <label htmlFor="message">Message</label>
+            <Label htmlFor="message">Message</Label>
             <FormField
               control={form.control}
               name="message"
