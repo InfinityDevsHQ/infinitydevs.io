@@ -1,18 +1,15 @@
 "use server";
 import nodemailer from "nodemailer";
-import { toast } from "sonner";
-
 const NEXT_PUBLIC_SMTP_HOST = process.env.NEXT_PUBLIC_SMTP_HOST;
-const NEXT_PUBLIC_SMTP_EMAIL = process.env.NEXT_PUBLIC_SMTP_EMAIL;
 const NEXT_PUBLIC_SMTP_PASSWORD = process.env.NEXT_PUBLIC_SMTP_PASSWORD;
-const NEXT_PUBLIC_RECEIVER = process.env.NEXT_PUBLIC_RECEIVER;
-
+const NEXT_PUBLIC_RECIPIENT_EMAIL = process.env.NEXT_PUBLIC_RECIPIENT_EMAIL;
+const NEXT_PUBLIC_SMTP_USERNAME = process.env.NEXT_PUBLIC_SMTP_USERNAME;
 const transporter = nodemailer.createTransport({
   host: NEXT_PUBLIC_SMTP_HOST,
   port: 587,
   secure: false,
   auth: {
-    user: NEXT_PUBLIC_SMTP_EMAIL,
+    user: NEXT_PUBLIC_SMTP_USERNAME,
     pass: NEXT_PUBLIC_SMTP_PASSWORD,
   },
 });
@@ -33,13 +30,13 @@ export async function sendMail({
   try {
     const info = await transporter.sendMail({
       from: email,
-      to: sendTo || NEXT_PUBLIC_RECEIVER,
+      to: sendTo || NEXT_PUBLIC_RECIPIENT_EMAIL,
       subject: subject,
       text: text,
       html: html || "",
     });
     console.log("Message Sent", info.messageId);
-    console.log("Mail sent to", NEXT_PUBLIC_RECEIVER);
+    console.log("Mail sent to", NEXT_PUBLIC_RECIPIENT_EMAIL);
     return info;
   } catch (error) {
     console.error("Error sending email", error);
