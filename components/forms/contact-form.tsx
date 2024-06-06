@@ -1,21 +1,25 @@
-"use client"
-import { Loader, Send } from "lucide-react"
-import { useForm } from "react-hook-form"
-import { Input } from "../ui/input"
-import Timings from "../landing-page/_components/timings"
-import { Textarea } from "../ui/textarea"
-import { Form, FormControl, FormField, FormItem, FormMessage } from "../ui/form"
-import { z } from "zod"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { sendMail } from "$/lib/send-mail"
-import { toast } from "sonner"
+"use client";
+import { Loader, Send } from "lucide-react";
+import { useForm } from "react-hook-form";
+import { Input } from "../ui/input";
+import Timings from "../landing-page/_components/timings";
+import { Textarea } from "../ui/textarea";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormMessage,
+} from "../ui/form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { sendMail } from "$/lib/send-mail";
+import { toast } from "sonner";
 const contactFormSchema = z.object({
   name: z.string().min(3, { message: "Name must be 3 characters long." }),
   email: z.string().email({ message: "Please Enter a valid email address" }),
-  message: z
-    .string()
-    .min(10, { message: "Message must be at least 10 characters long." }),
-})
+  message: z.string().min(1, { message: "Message cannot be empty." }),
+});
 export default function ContactForm() {
   const form = useForm({
     resolver: zodResolver(contactFormSchema),
@@ -24,8 +28,8 @@ export default function ContactForm() {
       email: "",
       message: "",
     },
-  })
-  const isLoading = form.formState.isSubmitting
+  });
+  const isLoading = form.formState.isSubmitting;
   async function onSubmit(values: z.infer<typeof contactFormSchema>) {
     try {
     } catch (error) {}
@@ -33,10 +37,10 @@ export default function ContactForm() {
       email: values.email,
       subject: "New Contact Us Form Submission",
       text: `Name: ${values.name}\nEmail: ${values.email}\nMessage: ${values.message}`,
-    })
-    console.log(res)
+    });
+    console.log(res);
     if (res?.messageId) {
-      toast.success("Message Sent Successfully")
+      toast.success("Message Sent Successfully");
       const res = await sendMail({
         email: process.env.NEXT_PUBLIC_RECEIVER || "",
         sendTo: values.email,
@@ -124,10 +128,10 @@ export default function ContactForm() {
           </body>
         </html>
         `,
-      })
-      console.log("Here it is ", res)
+      });
+      console.log("Here it is ", res);
     }
-    if (!res?.messageId) toast.error("Failed To send Message")
+    if (!res?.messageId) toast.error("Failed To send Message");
   }
 
   return (
@@ -211,5 +215,5 @@ export default function ContactForm() {
         </div>
       </form>
     </Form>
-  )
+  );
 }
