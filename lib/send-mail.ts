@@ -2,19 +2,18 @@
 import nodemailer from "nodemailer";
 import { toast } from "sonner";
 
-const NEXT_PUBLIC_HOST = process.env.NEXT_PUBLIC_HOST;
-const NEXT_PUBLIC_USERNAME = process.env.NEXT_PUBLIC_USERNAME;
-const NEXT_PUBLIC_PASSWORD = process.env.NEXT_PUBLIC_PASSWORD;
+const NEXT_PUBLIC_SMTP_HOST = process.env.NEXT_PUBLIC_SMTP_HOST;
+const NEXT_PUBLIC_SMTP_EMAIL = process.env.NEXT_PUBLIC_SMTP_EMAIL;
+const NEXT_PUBLIC_SMTP_PASSWORD = process.env.NEXT_PUBLIC_SMTP_PASSWORD;
 const NEXT_PUBLIC_RECEIVER = process.env.NEXT_PUBLIC_RECEIVER;
 
 const transporter = nodemailer.createTransport({
-  service: "gmail",
-  host: NEXT_PUBLIC_HOST,
-  port: 465,
-  secure: true,
+  host: NEXT_PUBLIC_SMTP_HOST,
+  port: 587,
+  secure: false,
   auth: {
-    user: NEXT_PUBLIC_USERNAME,
-    pass: NEXT_PUBLIC_PASSWORD,
+    user: NEXT_PUBLIC_SMTP_EMAIL,
+    pass: NEXT_PUBLIC_SMTP_PASSWORD,
   },
 });
 
