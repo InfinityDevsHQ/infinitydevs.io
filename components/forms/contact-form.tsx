@@ -144,7 +144,7 @@ export default function ContactForm() {
         <Timings />
         <div className="uppercase flex flex-col gap-6">
           <div className="flex flex-col gap-4">
-            <Label htmlFor="name">Name</Label>
+            <Label htmlFor="name">Name *</Label>
             <FormField
               control={form.control}
               name="name"
@@ -163,7 +163,7 @@ export default function ContactForm() {
             />
           </div>
           <div className="flex flex-col gap-4">
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="email">Email *</Label>
 
             <FormField
               control={form.control}
@@ -183,7 +183,7 @@ export default function ContactForm() {
             />
           </div>
           <div className="flex flex-col gap-4">
-            <Label htmlFor="message">Message</Label>
+            <Label htmlFor="message">Message *</Label>
             <FormField
               control={form.control}
               name="message"
