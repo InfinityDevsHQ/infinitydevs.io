@@ -5,6 +5,7 @@ const NEXT_PUBLIC_SENDER_EMAIL_PASSWORD =
   process.env.NEXT_PUBLIC_SENDER_EMAIL_PASSWORD;
 const NEXT_PUBLIC_RECIPIENT_EMAIL = process.env.NEXT_PUBLIC_RECIPIENT_EMAIL;
 const NEXT_PUBLIC_SENDER_EMAIL = process.env.NEXT_PUBLIC_SENDER_EMAIL;
+const NEXT_PUBLIC_FROM_EMAIL = process.env.NEXT_PUBLIC_FROM_EMAIL;
 const transporter = nodemailer.createTransport({
   host: NEXT_PUBLIC_SMTP_HOST,
   port: 587,
@@ -33,7 +34,7 @@ export async function sendMail({
   );
   try {
     const info = await transporter.sendMail({
-      from: "isaadgulzar@icloud.com",
+      from: NEXT_PUBLIC_FROM_EMAIL,
       to: sendTo || NEXT_PUBLIC_RECIPIENT_EMAIL,
       subject: subject,
       text: text,
