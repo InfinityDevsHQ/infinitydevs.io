@@ -22,8 +22,8 @@ export default function CodeTechnologies() {
           alt="vue logo"
           width={100}
           height={100}
-          className="sm:hidden w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 hover:translate-y-[-12px] hover:scale-105 transition-all duration-300 ease-in-out"
-          src={"/technologies/vue.svg"}
+          className="sm:hidden w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 hover:translate-y-[-12px] hover:scale-105 transition-all duration-300 ease-in-out  bg-[#252c3a] sm:rounded-3xl rounded-xl"
+          src={"/technologies/vue.js.svg"}
         />
       </div>
       <div className="flex gap-4 sm:gap-10 justify-center items-center">
@@ -66,8 +66,8 @@ export default function CodeTechnologies() {
           alt="vue logo"
           width={100}
           height={100}
-          className="hidden sm:block w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 hover:translate-y-[-12px] hover:scale-105 transition-all duration-300 ease-in-out"
-          src={"/technologies/vue.svg"}
+          className="hidden sm:block w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 hover:translate-y-[-12px] hover:scale-105 transition-all duration-300 ease-in-out mt-1  bg-[#252c3a] sm:rounded-3xl rounded-xl"
+          src={"/technologies/vue.js.svg"}
         />
       </div>
       <div className="flex gap-6 sm:gap-10 justify-center items-center">
