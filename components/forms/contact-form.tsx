@@ -51,7 +51,7 @@ export default function ContactForm() {
           <head>
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Contact Us Response</title>
+            <title>Thank You for Contacting Infinity Devs</title>
             <style>
               body {
                 font-family: Arial, sans-serif;
@@ -75,7 +75,7 @@ export default function ContactForm() {
               }
               .header {
                 text-align: center;
-                padding-bottom: 20px;
+                padding-bottom: 10px;
               }
               .header h1 {
                 margin: 0;
@@ -83,7 +83,7 @@ export default function ContactForm() {
                 -webkit-background-clip: text;
                 background-clip: text;
                 color: transparent;
-                line-height: 1.2;
+                font-size: 24px;
               }
               .content {
                 margin-bottom: 20px;
@@ -99,31 +99,18 @@ export default function ContactForm() {
           </head>
           <body>
             <div class="container">
-              <div class="header">
-                <h1>Thank You for Contacting Us!</h1>
-              </div>
               <div class="content">
+                <div class="header">
+                <h1>
+                  Thank you for reaching out to <br/> Infinity Devs!  
+                </h1>
+                </div>
                 <p>Dear ${values.name},</p>
                 <p>
-                  Thank you for reaching out to us. We have received your message and
-                  our team will get back to you as soon as possible.
+                  We have received your message and our team will get back to you as soon as possible.
                 </p>
-                <p><strong>Your Message:</strong></p>
-                <p>
-                ${values.message}
-                </p>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-                pariatur consequatur quas eaque nesciunt sit. Ipsa error vero, totam
-                quasi, est voluptate labore assumenda, laudantium tempora explicabo
-                laboriosam laborum asperiores.
-                </p>
-              </div>
-              <div class="footer">
                 <p>Best regards,</p>
-                <p>Infinity Devs</p>
-                <a href='https://infinitydevs.io/'>infinitydevs.io</a>
-                <p><a href="mailto:${process.env.NEXT_PUBLIC_RECEIVER}">${process.env.NEXT_PUBLIC_RECEIVER}</a></p>
+                <p><a href='https://infinitydevs.io/'>Infinity Devs</a></p>
               </div>
             </div>
           </body>
