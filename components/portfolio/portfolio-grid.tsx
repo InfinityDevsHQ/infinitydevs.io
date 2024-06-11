@@ -28,12 +28,12 @@ export default function PortfolioGrid() {
 
   return (
     <div className="flex items-center justify-center w-full">
-      <div className="lg:mb-12 grid lg:grid-cols-3 gap-12 justify-center justify-items-center w-full">
+      <div className="lg:mb-12 grid lg:grid-cols-3 gap-12 lg:justify-items-center w-full">
         {isDesktop ? (
           <>
             {Projects.map((project) => (
               <Dialog key={project.id}>
-                <DialogTrigger>
+                <DialogTrigger className="w-full">
                   <PortfolioCard
                     key={project.id}
                     imageUrl={project.images[0]}
@@ -68,7 +68,7 @@ export default function PortfolioGrid() {
           <>
             {Projects.map((project) => (
               <Drawer key={project.id}>
-                <DrawerTrigger asChild>
+                <DrawerTrigger>
                   <PortfolioCard
                     key={project.id}
                     imageUrl={project.images[0]}
@@ -77,6 +77,25 @@ export default function PortfolioGrid() {
                     description={project.description}
                   />
                 </DrawerTrigger>
+                <DrawerContent>
+                  <DrawerHeader className="flex flex-col gap-6">
+                    <DrawerTitle className="text-2xl font-bold">
+                      {project.name}
+                    </DrawerTitle>
+                    <DrawerDescription className="text-lg">
+                      {project.description}
+                    </DrawerDescription>
+                  </DrawerHeader>{" "}
+                  {project.images.map((img, index) => (
+                    <Image
+                      key={index}
+                      src={img}
+                      alt={`Snapshot-${index + 1}`}
+                      width={100}
+                      height={100}
+                    />
+                  ))}
+                </DrawerContent>
               </Drawer>
             ))}
           </>

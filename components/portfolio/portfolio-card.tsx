@@ -39,10 +39,9 @@ export default function PortfolioCard({
             ))}
           </div>
         )}
-        <Heading size="h4" className="font-bold">
+        <Heading size="h4" className="font-bold max-w-max">
           {tag}
         </Heading>
-        <p className="text-white">{description}</p>
       </div>
     </div>
   );
