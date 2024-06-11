@@ -34,30 +34,33 @@ const Checkbox = React.forwardRef<
           </CheckboxPrimitive.Indicator>
         </CheckboxPrimitive.Root>
       ) : (
-        <div
+        <CheckboxPrimitive.Root
+          ref={ref}
+          onCheckedChange={(state) => setChecked(!state)}
           className={cn(
-            "flex  max-w-max items-center justify-between px-2 py-1 text-sm  font-semibold rounded-full",
-            checked ? "bg-blue-900/40 common-border" : "!bg-white border-white"
+            "peer rounded-md disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground",
+            className
           )}
-          onClick={() => setChecked(!checked)}
-          style={{
-            boxShadow: "0px 4px 50px rgba(0, 0, 0, 0.05)",
-            borderRadius: "100px",
-          }}
+          {...props}
         >
-          <CheckboxPrimitive.Root
-            ref={ref}
-            onCheckedChange={(state) => setChecked(!state)}
+          <div
             className={cn(
-              "peer h-8 w-8 rounded-md hidden bg-white opacity-0 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground",
-              className
+              "flex  max-w-max items-center justify-between px-2 py-1 text-sm  font-semibold rounded-full",
+              checked
+                ? "bg-blue-900/40 common-border"
+                : "!bg-white border-white"
             )}
-            {...props}
-          ></CheckboxPrimitive.Root>
-          <div className={cn(checked ? "text-zinc-300" : "gradient-text")}>
-            {children}
+            onClick={() => setChecked(!checked)}
+            style={{
+              boxShadow: "0px 4px 50px rgba(0, 0, 0, 0.05)",
+              borderRadius: "100px",
+            }}
+          >
+            <div className={cn(checked ? "text-zinc-300" : "gradient-text")}>
+              {children}
+            </div>
           </div>
-        </div>
+        </CheckboxPrimitive.Root>
       )}
     </>
   );
