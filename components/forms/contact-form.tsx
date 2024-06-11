@@ -35,7 +35,6 @@ export default function ContactForm() {
     try {
     } catch (error) {}
     const res = await sendMail({
-      email: values.email,
       subject: "New Contact Us Form Submission",
       text: `Name: ${values.name}\nEmail: ${values.email}\nMessage: ${values.message}`,
     });
@@ -43,7 +42,6 @@ export default function ContactForm() {
     if (res?.messageId) {
       toast.success("Message Sent Successfully");
       const res = await sendMail({
-        email: process.env.NEXT_PUBLIC_RECEIVER || "",
         sendTo: values.email,
         subject: "Thank You Letter from Infinity Devs",
         html: `<!DOCTYPE html>
