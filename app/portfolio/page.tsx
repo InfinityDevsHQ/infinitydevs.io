@@ -1,4 +1,4 @@
-import Portfolio from "$/components/landing-page/portfolio";
+import Portfolio from "$/components/portfolio/portfolio";
 
 export default function PortfolioPage() {
   return (

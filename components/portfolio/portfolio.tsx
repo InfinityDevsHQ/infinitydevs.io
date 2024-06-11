@@ -1,7 +1,7 @@
 import Heading from "../../app/_components/heading";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import PortfolioGrid from "./_components/portfolio-grid";
+import PortfolioGrid from "./portfolio-grid";
 import { Checkbox } from "../ui/checkbox";
 export default function Portfolio() {
   const Filters = [
