@@ -9,19 +9,18 @@ import Testimonials from "../components/landing-page/testimonials";
 import WhoWeAre from "../components/landing-page/who-we-are";
 
 export default function Home() {
-	return (
-		<>
-			<main>
-				<HeroSection />
-				<WhoWeAre />
-				<HowWeWork />
-				<Technologies />
-				{/* <Portfolio /> */}
-				<Testimonials />
-				{/* <OurPartners /> */}
-				<ContactUs />
-				<Footer />
-			</main>
-		</>
-	);
+  return (
+    <>
+      <main>
+        <HeroSection />
+        <WhoWeAre />
+        <HowWeWork />
+        <Technologies />
+        {/* <Portfolio /> */}
+        <Testimonials />
+        {/* <OurPartners /> */}
+        <ContactUs />
+      </main>
+    </>
+  );
 }

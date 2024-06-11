@@ -3,6 +3,7 @@ import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "$/components/ui/sonner";
 import Header from "./_components/header";
+import Footer from "$/components/gernal/footer";
 
 const notoSans = Noto_Sans({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={notoSans.className}>
         <Header />
         {children}
+        <Footer />
         <Toaster richColors />
       </body>
     </html>
