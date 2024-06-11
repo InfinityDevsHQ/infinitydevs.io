@@ -16,7 +16,9 @@ export default function PortfolioCard({
   description,
 }: PortfolioCardProps) {
   return (
-    <div className={`bg-purple-900/40 rounded-2xl ${className} w-full`}>
+    <div
+      className={`bg-purple-900/40 rounded-2xl ${className} w-full border border-indigo-600/40 px-2.5`}
+    >
       <Image
         src={imageUrl}
         alt={`${tag} Snapshots`}
