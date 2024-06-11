@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={notoSans.className}>
-        <Header />
+        <Header className="fixed top-0" />
         {children}
         <Footer />
         <Toaster richColors />
