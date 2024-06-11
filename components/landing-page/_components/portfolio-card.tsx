@@ -6,18 +6,20 @@ export type PortfolioCardProps = {
   tag: string;
   pills?: string[];
   className?: string;
+  description: string;
 };
 export default function PortfolioCard({
   imageUrl,
   tag,
   pills,
   className,
+  description,
 }: PortfolioCardProps) {
   return (
     <div className={`bg-purple-900/40 rounded-2xl ${className} w-full`}>
       <Image
         src={imageUrl}
-        alt={`${imageUrl}`}
+        alt={`${tag} Snapshots`}
         width={300}
         height={300}
         className="p-4 mx-auto"
@@ -38,6 +40,7 @@ export default function PortfolioCard({
         <Heading size="h4" className="font-bold">
           {tag}
         </Heading>
+        <p className="text-white">{description}</p>
       </div>
     </div>
   );
