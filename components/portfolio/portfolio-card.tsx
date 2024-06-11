@@ -17,7 +17,7 @@ export default function PortfolioCard({
 }: PortfolioCardProps) {
   return (
     <div
-      className={`bg-purple-900/40 rounded-2xl ${className} w-full border border-indigo-600/40 px-2.5`}
+      className={`bg-purple-900/40 rounded-2xl ${className} w-full border border-indigo-600/40 px-2.5 cursor-pointer`}
     >
       <Image
         src={imageUrl}
