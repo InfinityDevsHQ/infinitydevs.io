@@ -14,6 +14,7 @@ const Checkbox = React.forwardRef<
   CheckboxProps
 >(({ className, pill = false, children, ...props }, ref) => {
   const [checked, setChecked] = React.useState(false);
+  console.log(checked);
   return (
     <>
       {!pill ? (
@@ -35,9 +36,10 @@ const Checkbox = React.forwardRef<
       ) : (
         <div
           className={cn(
-            "flex max-w-max items-center gap-2 p-2 px-3 text-base",
-            checked ? "bg-primary" : "bg-white"
+            "flex  max-w-max items-center justify-between px-2 py-1 text-sm  font-semibold rounded-full",
+            checked ? "bg-blue-900/40 common-border" : "!bg-white border-white"
           )}
+          onClick={() => setChecked(!checked)}
           style={{
             boxShadow: "0px 4px 50px rgba(0, 0, 0, 0.05)",
             borderRadius: "100px",
@@ -45,28 +47,14 @@ const Checkbox = React.forwardRef<
         >
           <CheckboxPrimitive.Root
             ref={ref}
-            onCheckedChange={(state) => setChecked(state === true)}
+            onCheckedChange={(state) => setChecked(!state)}
             className={cn(
-              "peer h-8 w-8 rounded-md bg-white disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground",
+              "peer h-8 w-8 rounded-md hidden bg-white opacity-0 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground",
               className
             )}
             {...props}
-          >
-            <span
-              className={cn(
-                "flex h-6 w-6 items-center justify-center rounded-full",
-                checked ? "bg-white" : "bg-mute-2"
-              )}
-            >
-              <Check
-                className={cn(
-                  "h-3 w-3 text-black",
-                  checked ? "text-primary" : "text-mute-1"
-                )}
-              />
-            </span>
-          </CheckboxPrimitive.Root>
-          <div className={cn(checked ? "text-white" : "text-mute-1")}>
+          ></CheckboxPrimitive.Root>
+          <div className={cn(checked ? "text-zinc-300" : "gradient-text")}>
             {children}
           </div>
         </div>
