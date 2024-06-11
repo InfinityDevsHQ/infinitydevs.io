@@ -38,7 +38,7 @@ const Checkbox = React.forwardRef<
           ref={ref}
           onCheckedChange={(state) => setChecked(!state)}
           className={cn(
-            "peer rounded-md disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground",
+            "peer rounded-md disabled:cursor-not-allowed disabled:opacity-50",
             className
           )}
           {...props}
@@ -47,16 +47,15 @@ const Checkbox = React.forwardRef<
             className={cn(
               "flex  max-w-max items-center justify-between px-2 py-1 text-sm  font-semibold rounded-full",
               checked
-                ? "bg-blue-900/40 common-border"
-                : "!bg-white border-white"
+                ? "!bg-white border-white"
+                : " bg-blue-900/40 common-border"
             )}
-            onClick={() => setChecked(!checked)}
             style={{
               boxShadow: "0px 4px 50px rgba(0, 0, 0, 0.05)",
               borderRadius: "100px",
             }}
           >
-            <div className={cn(checked ? "text-zinc-300" : "gradient-text")}>
+            <div className={cn(checked ? "gradient-text" : "text-zinc-300")}>
               {children}
             </div>
           </div>

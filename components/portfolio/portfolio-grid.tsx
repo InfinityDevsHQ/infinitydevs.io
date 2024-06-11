@@ -14,10 +14,8 @@ import {
 } from "../ui/dialog";
 import {
   Drawer,
-  DrawerClose,
   DrawerContent,
   DrawerDescription,
-  DrawerFooter,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
@@ -85,7 +83,7 @@ export default function PortfolioGrid() {
                     <DrawerDescription className="text-lg">
                       {project.description}
                     </DrawerDescription>
-                  </DrawerHeader>{" "}
+                  </DrawerHeader>
                   {project.images.map((img, index) => (
                     <Image
                       key={index}
