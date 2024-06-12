@@ -5,7 +5,7 @@ export const Projects = [
     description:
       "A platform connecting real estate agents with potential clients.",
     tags: ["Tailwind CSS", "Next.js"],
-    images: ["/image1.jpg", "/image2.jpg"],
+    images: ["/portfolio/listing-partners.png", "/image2.jpg"],
   },
   {
     id: 2,
