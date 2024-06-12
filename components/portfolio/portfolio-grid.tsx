@@ -3,7 +3,7 @@ import { Projects } from "$/constants";
 import PortfolioCard from "./portfolio-card";
 import Image from "next/image";
 import useMediaQuery from "$/hooks/useMediaQuery";
-import { useState } from "react";
+import React from "react";
 import {
   Dialog,
   DialogContent,
@@ -20,18 +20,25 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "../ui/drawer";
-export default function PortfolioGrid({
-  currentFilters,
-}: {
+
+interface PortfolioGridProps {
   currentFilters: string[];
-}) {
+}
+
+const PortfolioGrid: React.FC<PortfolioGridProps> = ({ currentFilters }) => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
+
   const filteredProjects = Projects.filter((project) => {
     if (currentFilters.length === 0) {
       return true;
     }
     return project.tags.some((tag) => currentFilters.includes(tag));
-  });
+  }).reduce((uniqueProjects, project) => {
+    if (!uniqueProjects.some((p) => p.id === project.id)) {
+      uniqueProjects.push(project);
+    }
+    return uniqueProjects;
+  }, [] as typeof Projects);
 
   return (
     <div className="flex items-center justify-center w-full">
@@ -110,4 +117,6 @@ export default function PortfolioGrid({
       </div>
     </div>
   );
-}
+};
+
+export default PortfolioGrid;
