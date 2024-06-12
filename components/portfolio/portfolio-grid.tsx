@@ -29,11 +29,10 @@ export default function PortfolioGrid() {
       <div className="lg:mb-12 grid lg:grid-cols-3 gap-12 lg:justify-items-center w-full">
         {isDesktop ? (
           <>
-            {Projects.map((project) => (
-              <Dialog key={project.id}>
+            {Projects.map((project, index) => (
+              <Dialog key={index}>
                 <DialogTrigger className="w-full">
                   <PortfolioCard
-                    key={project.id}
                     imageUrl={project.images[0]}
                     tag={project.name}
                     pills={project.tags}
