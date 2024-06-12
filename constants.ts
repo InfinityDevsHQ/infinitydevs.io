@@ -8,6 +8,7 @@ export const Projects = [
       "/portfolio/listing-partners-thumbnail.png",
       "/portfolio/listing-partners-thumbnail.png",
     ],
+    previewLink: "https://www.listingpartners.com.au/",
   },
   {
     id: 2,
@@ -19,5 +20,7 @@ export const Projects = [
       "/portfolio/crypto-page-thumbnail.png",
       "/portfolio/crypto-page-thumbnail.png",
     ],
+    previewLink:
+      "https://crypto-invoice-generator-git-main-isaadgulzar.vercel.app/",
   },
 ];

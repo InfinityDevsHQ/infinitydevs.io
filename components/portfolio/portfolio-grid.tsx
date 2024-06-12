@@ -8,6 +8,7 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -16,10 +17,14 @@ import {
   Drawer,
   DrawerContent,
   DrawerDescription,
+  DrawerFooter,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
 } from "../ui/drawer";
+import { Button } from "../ui/button";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 interface PortfolioGridProps {
   currentFilters: string[];
@@ -73,6 +78,20 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = ({ currentFilters }) => {
                       className="h-full w-full"
                     />
                   ))}
+                  {project.previewLink && (
+                    <DialogFooter>
+                      <Button asChild>
+                        <Link
+                          href={project.previewLink}
+                          target="blank"
+                          className="flex items-center gap-2"
+                        >
+                          <span>Preview</span>
+                          <ArrowRight />
+                        </Link>
+                      </Button>
+                    </DialogFooter>
+                  )}
                 </DialogContent>
               </Dialog>
             ))}
@@ -89,7 +108,7 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = ({ currentFilters }) => {
                     pills={project.tags}
                   />
                 </DrawerTrigger>
-                <DrawerContent className="overflow-auto max-h-[75vh]">
+                <DrawerContent className="overflow-auto">
                   <DrawerHeader className="flex flex-col gap-6">
                     <DrawerTitle className="text-2xl font-bold">
                       {project.name}
@@ -107,7 +126,21 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = ({ currentFilters }) => {
                       height={10000}
                       className="h-full w-full"
                     />
-                  ))}
+                  ))}{" "}
+                  {project.previewLink && (
+                    <DrawerFooter>
+                      <Button asChild>
+                        <Link
+                          href={project.previewLink}
+                          target="blank"
+                          className="flex items-center gap-2"
+                        >
+                          <span>Preview</span>
+                          <ArrowRight />
+                        </Link>
+                      </Button>
+                    </DrawerFooter>
+                  )}
                 </DrawerContent>
               </Drawer>
             ))}
