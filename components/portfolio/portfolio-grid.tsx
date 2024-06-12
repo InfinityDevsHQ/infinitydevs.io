@@ -40,7 +40,7 @@ export default function PortfolioGrid() {
                     description={project.description}
                   />
                 </DialogTrigger>
-                <DialogContent className="overflow-y-auto max-h-full">
+                <DialogContent className="overflow-y-auto max-h-[90vh] w-1/2 min-w-[50vw]">
                   <DialogHeader className="flex flex-col gap-4">
                     <DialogTitle className="font-bold text-4xl">
                       {project.name}
@@ -54,8 +54,8 @@ export default function PortfolioGrid() {
                       key={index}
                       src={img}
                       alt={`Snapshot-${index + 1}`}
-                      width={100}
-                      height={100}
+                      width={10000}
+                      height={10000}
                       className="h-full w-full"
                     />
                   ))}
