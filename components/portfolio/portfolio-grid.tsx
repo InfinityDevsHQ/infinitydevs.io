@@ -56,7 +56,7 @@ export default function PortfolioGrid() {
                       alt={`Snapshot-${index + 1}`}
                       width={100}
                       height={100}
-                      className="h-auto w-auto"
+                      className="h-full w-full"
                     />
                   ))}
                 </DialogContent>
