@@ -2,8 +2,7 @@ export const Projects = [
   {
     id: 1,
     name: "ListingPartners",
-    description:
-      "A platform connecting real estate agents with potential clients.",
+    description: `This project is about a startup named "ListingPartners" where you can sell your home with confidence – your go-to platform for connecting with the perfect real estate agent in Australia. I have used React Nextjs & Tailwind CSS for the frontend, Integrated Calendly to manage bookings and integrated Google Tag Manager for conversion tracking, site analytics, remarketing, and more.`,
     tags: ["Tailwind CSS", "Next.js"],
     images: [
       "/portfolio/listing-partners-thumbnail.png",
