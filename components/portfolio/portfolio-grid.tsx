@@ -80,7 +80,10 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = ({ currentFilters }) => {
                   ))}
                   {project.previewLink && (
                     <DialogFooter>
-                      <Button asChild>
+                      <Button
+                        className="bg-blue-900/40 hover:-translate-y-1.5 transition-all ease-in-out duration-300 gap-2 px-5 py-2  common-border !rounded-full text-white"
+                        asChild
+                      >
                         <Link
                           href={project.previewLink}
                           target="blank"
@@ -126,10 +129,13 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = ({ currentFilters }) => {
                       height={10000}
                       className="h-full w-full"
                     />
-                  ))}{" "}
+                  ))}
                   {project.previewLink && (
                     <DrawerFooter>
-                      <Button asChild>
+                      <Button
+                        className="bg-blue-900/40 hover:-translate-y-1.5 transition-all ease-in-out duration-300 flex items-center gap-2 px-5 py-2 self-start common-border !rounded-full text-white"
+                        asChild
+                      >
                         <Link
                           href={project.previewLink}
                           target="blank"
