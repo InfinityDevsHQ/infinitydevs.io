@@ -45,14 +45,13 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = ({ currentFilters }) => {
       <div className="lg:mb-12 grid lg:grid-cols-3 gap-12 lg:justify-items-center w-full">
         {isDesktop ? (
           <>
-            {filteredProjects.map((project, index) => (
-              <Dialog key={index}>
+            {filteredProjects.map((project) => (
+              <Dialog key={project.id}>
                 <DialogTrigger className="w-full">
                   <PortfolioCard
                     imageUrl={project.images[0]}
                     tag={project.name}
                     pills={project.tags}
-                    description={project.description}
                   />
                 </DialogTrigger>
                 <DialogContent className="overflow-y-auto max-h-[90vh] w-1/2 min-w-[50vw]">
@@ -88,10 +87,9 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = ({ currentFilters }) => {
                     imageUrl={project.images[0]}
                     tag={project.name}
                     pills={project.tags}
-                    description={project.description}
                   />
                 </DrawerTrigger>
-                <DrawerContent>
+                <DrawerContent className="overflow-auto max-h-[75vh]">
                   <DrawerHeader className="flex flex-col gap-6">
                     <DrawerTitle className="text-2xl font-bold">
                       {project.name}
@@ -105,8 +103,9 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = ({ currentFilters }) => {
                       key={index}
                       src={img}
                       alt={`Snapshot-${index + 1}`}
-                      width={100}
-                      height={100}
+                      width={10000}
+                      height={10000}
+                      className="h-full w-full"
                     />
                   ))}
                 </DrawerContent>

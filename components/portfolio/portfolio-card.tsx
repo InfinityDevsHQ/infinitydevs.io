@@ -7,14 +7,12 @@ export type PortfolioCardProps = {
   tag: string;
   pills?: string[];
   className?: string;
-  description: string;
 };
 export default function PortfolioCard({
   imageUrl,
   tag,
   pills,
   className,
-  description,
 }: PortfolioCardProps) {
   return (
     <div
