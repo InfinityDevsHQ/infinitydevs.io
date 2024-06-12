@@ -54,7 +54,7 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-        <PortfolioGrid />
+        <PortfolioGrid currentFilters={currentFilters} />
       </div>
     </section>
   );

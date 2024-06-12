@@ -20,16 +20,25 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "../ui/drawer";
-export default function PortfolioGrid() {
-  const [open, setOpen] = useState(false);
+export default function PortfolioGrid({
+  currentFilters,
+}: {
+  currentFilters: string[];
+}) {
   const isDesktop = useMediaQuery("(min-width: 768px)");
+  const filteredProjects = Projects.filter((project) => {
+    if (currentFilters.length === 0) {
+      return true;
+    }
+    return project.tags.some((tag) => currentFilters.includes(tag));
+  });
 
   return (
     <div className="flex items-center justify-center w-full">
       <div className="lg:mb-12 grid lg:grid-cols-3 gap-12 lg:justify-items-center w-full">
         {isDesktop ? (
           <>
-            {Projects.map((project, index) => (
+            {filteredProjects.map((project, index) => (
               <Dialog key={index}>
                 <DialogTrigger className="w-full">
                   <PortfolioCard
@@ -64,7 +73,7 @@ export default function PortfolioGrid() {
           </>
         ) : (
           <>
-            {Projects.map((project) => (
+            {filteredProjects.map((project) => (
               <Drawer key={project.id}>
                 <DrawerTrigger>
                   <PortfolioCard
