@@ -12,6 +12,17 @@ export const Projects = [
   },
   {
     id: 2,
+    name: "Crypto Invoice Generator",
+    description:
+      "An application to monitor and analyze your daily health metrics.",
+    tags: ["React.js", "UI/UX Design"],
+    images: [
+      "/portfolio/crypto-page-thumbnail.png",
+      "/portfolio/crypto-page-thumbnail.png",
+    ],
+  },
+  {
+    id: 2,
     name: "HealthTracker",
     description:
       "An application to monitor and analyze your daily health metrics.",
