@@ -23,7 +23,7 @@ export default function Header({ className }: HeaderProps) {
     <header
       className={`flex z-50 left-0 items-end justify-between bg-transparent w-full px-4 md:px-10 lg:px-12 py-4 lg:py-8 ${className}`}
     >
-      <div>
+      <Link href={"/"}>
         <Image
           src={"/logo-light.png"}
           width={200}
@@ -38,7 +38,7 @@ export default function Header({ className }: HeaderProps) {
           className="lg:hidden"
           alt="Infinity Devs Logo"
         />
-      </div>
+      </Link>
 
       <div>
         <div className="lg:hidden">
