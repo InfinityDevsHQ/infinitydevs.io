@@ -18,15 +18,13 @@ export default function PortfolioCard({
     <div
       className={`bg-purple-900/40 rounded-2xl ${className} w-full border border-indigo-600/40 px-2.5 cursor-pointer`}
     >
-      <div className="flex items-center justify-center p-4">
-        <AspectRatio ratio={300 / 300}>
-          <Image
-            src={imageUrl}
-            alt={`${tag} Snapshots`}
-            width={1200}
-            height={400}
-          />
-        </AspectRatio>
+      <div className="flex items-center p-4">
+        <Image
+          src={imageUrl}
+          alt={`${tag} Snapshots`}
+          width={1200}
+          height={400}
+        />
       </div>
       <div className="p-4 flex flex-col gap-2 border-t">
         {pills?.length && (
