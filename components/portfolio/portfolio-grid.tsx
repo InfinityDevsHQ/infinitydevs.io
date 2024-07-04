@@ -111,7 +111,7 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = ({ currentFilters }) => {
                     pills={project.tags}
                   />
                 </DrawerTrigger>
-                <DrawerContent className="max-h-max">
+                <DrawerContent className="h-screen px-2">
                   <DrawerHeader className="flex flex-col gap-6">
                     <DrawerTitle className="text-2xl font-bold">
                       {project.name}
@@ -120,16 +120,18 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = ({ currentFilters }) => {
                       {project.description}
                     </DrawerDescription>
                   </DrawerHeader>
-                  {project.images.map((img, index) => (
-                    <Image
-                      key={index}
-                      src={img}
-                      alt={`Snapshot-${index + 1}`}
-                      width={10000}
-                      height={10000}
-                      className="h-full w-full"
-                    />
-                  ))}
+                  <div className="h-full overflow-y-auto">
+                    {project.images.map((img, index) => (
+                      <Image
+                        key={index}
+                        src={img}
+                        alt={`Snapshot-${index + 1}`}
+                        width={10000}
+                        height={10000}
+                        className="h-full w-full mb-3"
+                      />
+                    ))}
+                  </div>
                   {project.previewLink && (
                     <DrawerFooter>
                       <Button
