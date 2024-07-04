@@ -111,7 +111,7 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = ({ currentFilters }) => {
                     pills={project.tags}
                   />
                 </DrawerTrigger>
-                <DrawerContent className="overflow-auto">
+                <DrawerContent className="max-h-max">
                   <DrawerHeader className="flex flex-col gap-6">
                     <DrawerTitle className="text-2xl font-bold">
                       {project.name}
