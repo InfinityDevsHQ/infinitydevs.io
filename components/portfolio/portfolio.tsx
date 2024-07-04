@@ -34,7 +34,7 @@ export default function Portfolio() {
             >
               <span>our</span> portfolio
             </Heading>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-6 flex-wrap">
               {Filters.map((filter, index) => (
                 <Checkbox
                   key={index}
