@@ -95,6 +95,9 @@ export default function Header({ className }: HeaderProps) {
                         </button>
                       </li>
                       <li>
+                        <Link href={"/portfolio"}>Portfolio</Link>
+                      </li>
+                      <li>
                         <button
                           type="button"
                           onClick={() => {
