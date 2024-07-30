@@ -1,29 +1,29 @@
-"use client"
-import Link from "next/link"
-import { Menu } from "lucide-react"
-import { X } from "lucide-react"
-import { useState } from "react"
-import Image from "next/image"
-import { motion, AnimatePresence } from "framer-motion"
-import DesktopNav from "./navigation"
-import smoothScroll from "../utils/smoothScroll"
+"use client";
+import Link from "next/link";
+import { Menu } from "lucide-react";
+import { X } from "lucide-react";
+import { useState } from "react";
+import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
+import DesktopNav from "./navigation";
+import smoothScroll from "../utils/smoothScroll";
 
 export type HeaderProps = {
-  className?: string
-}
+  className?: string;
+};
 
 export default function Header({ className }: HeaderProps) {
-  const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const sidebarVariants = {
     open: { x: 0 },
     closed: { x: "100%" },
-  }
+  };
 
   return (
     <header
-      className={`flex left-0 items-end justify-between w-full px-4 md:px-10 lg:px-12 py-4 lg:py-8 ${className}`}
+      className={`flex z-50 left-0 items-end justify-between bg-transparent w-full px-4 md:px-10 lg:px-12 py-4 lg:py-8 ${className}`}
     >
-      <div>
+      <Link href={"/"}>
         <Image
           src={"/logo-light.png"}
           width={200}
@@ -38,7 +38,7 @@ export default function Header({ className }: HeaderProps) {
           className="lg:hidden"
           alt="Infinity Devs Logo"
         />
-      </div>
+      </Link>
 
       <div>
         <div className="lg:hidden">
@@ -76,8 +76,8 @@ export default function Header({ className }: HeaderProps) {
                         <button
                           type="button"
                           onClick={() => {
-                            smoothScroll({ sectionId: "about-us" })
-                            setSidebarOpen(false)
+                            smoothScroll({ sectionId: "about-us" });
+                            setSidebarOpen(false);
                           }}
                         >
                           About Us
@@ -87,19 +87,22 @@ export default function Header({ className }: HeaderProps) {
                         <button
                           type="button"
                           onClick={() => {
-                            smoothScroll({ sectionId: "Testimonials" })
-                            setSidebarOpen(false)
+                            smoothScroll({ sectionId: "Testimonials" });
+                            setSidebarOpen(false);
                           }}
                         >
                           Testimonials
                         </button>
                       </li>
                       <li>
+                        <Link href={"/portfolio"}>Portfolio</Link>
+                      </li>
+                      <li>
                         <button
                           type="button"
                           onClick={() => {
-                            smoothScroll({ sectionId: "contact-us" })
-                            setSidebarOpen(false)
+                            smoothScroll({ sectionId: "contact-us" });
+                            setSidebarOpen(false);
                           }}
                         >
                           Contact Us
@@ -118,5 +121,5 @@ export default function Header({ className }: HeaderProps) {
       </div>
       <DesktopNav className="hidden lg:flex justify-between" />
     </header>
-  )
+  );
 }

@@ -1,9 +1,10 @@
-import React from "react"
-import smoothScroll from "../utils/smoothScroll"
+import React from "react";
+import smoothScroll from "../utils/smoothScroll";
+import Link from "next/link";
 
 export type DesktopNavProps = {
-  className?: string
-}
+  className?: string;
+};
 export default function DesktopNav({ className }: DesktopNavProps) {
   return (
     <nav className={`text-white text-lg capitalize ${className || ""}`}>
@@ -26,6 +27,14 @@ export default function DesktopNav({ className }: DesktopNavProps) {
             Testimonials
           </button>
         </li>
+        {/* <li>
+          <Link
+            href={"/portfolio"}
+            className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary"
+          >
+            Portfolio
+          </Link>
+        </li> */}
         <li>
           <button
             type="button"
@@ -37,5 +46,5 @@ export default function DesktopNav({ className }: DesktopNavProps) {
         </li>
       </ol>
     </nav>
-  )
+  );
 }
