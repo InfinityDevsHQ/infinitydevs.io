@@ -27,14 +27,14 @@ export default function DesktopNav({ className }: DesktopNavProps) {
             Testimonials
           </button>
         </li>
-        <li>
+        {/* <li>
           <Link
             href={"/portfolio"}
             className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-primary"
           >
             Portfolio
           </Link>
-        </li>
+        </li> */}
         <li>
           <button
             type="button"
