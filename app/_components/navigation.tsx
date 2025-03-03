@@ -1,11 +1,17 @@
 import React from "react";
 import smoothScroll from "../utils/smoothScroll";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export type DesktopNavProps = {
   className?: string;
 };
 export default function DesktopNav({ className }: DesktopNavProps) {
+  const pathname = usePathname();
+  const isHostingPage = pathname === "/infinite-wp-hosting";
+
+  if(isHostingPage) return <></>
+
   return (
     <nav className={`text-white text-lg capitalize ${className || ""}`}>
       <ol className="flex items-center justify-between gap-12 xl:gap-16 text-center">
