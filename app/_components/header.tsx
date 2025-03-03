@@ -7,6 +7,8 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import DesktopNav from "./navigation";
 import smoothScroll from "../utils/smoothScroll";
+import { usePathname } from "next/navigation";
+import { cn } from "$/lib/utils";
 
 export type HeaderProps = {
   className?: string;
@@ -14,6 +16,9 @@ export type HeaderProps = {
 
 export default function Header({ className }: HeaderProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const pathname = usePathname();
+  const isHostingPage = pathname === "/infinite-wp-hosting";
+
   const sidebarVariants = {
     open: { x: 0 },
     closed: { x: "100%" },
@@ -21,7 +26,7 @@ export default function Header({ className }: HeaderProps) {
 
   return (
     <header
-      className={`flex z-50 left-0 items-end justify-between bg-transparent w-full px-4 md:px-10 lg:px-12 py-4 lg:py-8 ${className}`}
+      className={cn(`flex z-50 left-0 items-end justify-between bg-transparent w-full px-4 md:px-10 lg:px-12 py-4 lg:py-8`, className, isHostingPage ? 'justify-center' : '')}
     >
       <Link href={"/"}>
         <Image
