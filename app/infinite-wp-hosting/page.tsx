@@ -126,24 +126,27 @@ export default function PricingSection(): JSX.Element {
 							</div>
 						))}
 					</div>
-					<div className="order-1 lg:order-2 col-span-2 flex flex-col p-6 rounded-3xl border border-purple-400/30 bg-purple-900/20 text-left">
-						<div className="flex flex-row items- justify-between mb-4">
+					<div className="order-1 lg:order-2 col-span-2 flex flex-col p-3 md:p-6 rounded-3xl border border-purple-400/30 bg-purple-900/20 text-left">
+						<div className="flex flex-col md:flex-row justify-between md:gap-0 mb-4">
 							<Heading
 								size="h3"
-								className="uppercase font-bold text-left pr-48 lg:pr-0"
+								className="uppercase font-bold text-left md:pr-48 lg:pr-0"
 							>
 								Managed WP Hosting – Feature-Packed & Affordable!
 							</Heading>
 							<div className="flex flex-col gap-2">
-								<div className="flex flex-col relative lg:-top-3">
-									<h4 className="text-5xl font-bold">$25</h4>
+								<div className="flex flex-row md:flex-col justify-end md:justify-normal items-end gap-2 md:gap-0 relative top-2 lg:-top-3">
+									<p className="text-sm font-medium text-muted-foreground md:hidden">
+										only
+									</p>
+									<h4 className="text-2xl md:text-5xl font-bold">$30</h4>
 									<p className="text-sm font-medium text-muted-foreground">
 										Billed Yearly
 									</p>
 								</div>
 							</div>
 						</div>
-						<div className="grid grid-cols-2 lg:grid-cols-4 gap-1 gap-x-5 mt-3 text-left">
+						<div className="grid grid-cols-1 lg:grid-cols-4 gap-1 gap-x-5 mt-3 text-left">
 							{features.map((feature, index) => (
 								<div
 									key={index}
@@ -153,18 +156,18 @@ export default function PricingSection(): JSX.Element {
 										className="text-green-400"
 										size={18}
 									/>
-									<span>{feature}</span>
+									<span className="text-sm md:text-base ">{feature}</span>
 								</div>
 							))}
 						</div>
-            <div className="flex  justify-center lg:justify-end mt-5">
-            <Button
-									onClick={openWhatsApp}
-									className="bg-green-600 uppercase hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition-all"
-								>
-									Get Yours Now
-								</Button>
-            </div>
+						<div className="flex  justify-center lg:justify-end mt-5">
+							<Button
+								onClick={openWhatsApp}
+								className="bg-green-600 uppercase hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition-all"
+							>
+								Get Yours Now
+							</Button>
+						</div>
 					</div>
 				</div>
 			</div>
