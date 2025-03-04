@@ -136,10 +136,10 @@ export default function PricingSection(): JSX.Element {
 							</Heading>
 							<div className="flex flex-col gap-2">
 								<div className="flex flex-row md:flex-col justify-end md:justify-normal items-end gap-2 md:gap-0 relative top-2 lg:-top-3">
-								<p className="text-sm font-medium text-muted-foreground">
+									<p className="text-sm font-medium text-muted-foreground md:hidden">
 										only
 									</p>
-									<h4 className="text-2xl md:text-5xl font-bold">$35</h4>
+									<h4 className="text-2xl md:text-5xl font-bold">$30</h4>
 									<p className="text-sm font-medium text-muted-foreground">
 										Billed Yearly
 									</p>
