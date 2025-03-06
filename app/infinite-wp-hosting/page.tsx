@@ -18,7 +18,6 @@ import Card from "$/components/card";
 
 const features: string[] = [
 	"1 Website (Domain NOT included)",
-	"50 GB SSD Storage",
 	"Managed Hosting for WordPress",
 	"AI Powered Website Builder",
 	"Free automatic website migration",
